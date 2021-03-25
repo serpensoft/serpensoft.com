@@ -1,0 +1,186 @@
+/* General */
+
+body, input, textarea, select, code {
+	
+	color: #4d4d4d;
+	font-size: 0.9em;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica Neue, Verdana, Arial, sans-serif;
+ }
+
+body {
+
+	background-color: #d1d7e2;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+/* Formatting */
+
+
+p {
+	  margin-top: 0;
+}
+
+/* Headings */
+
+h1, h2, h3 {
+	  margin: 0;
+	  text-rendering: optimizeLegibility;
+}
+
+h1 {
+	  font-size: 1.6em;
+}
+
+h2 {
+	  font-size: 1.4em;
+}
+
+h3 {
+	  font-size: 1.2em;
+}
+
+/* Lists */
+
+ul, ol {
+	  margin: 0;
+	  padding-left: 1.5em;
+}
+
+/* Links */
+
+a:link, a:visited {
+	  color: #139aff;
+}
+
+a:hover {
+	  color: #1b83d2;
+}
+
+a:active {
+	  color: #4e99d1;
+}
+
+a img {
+	  border-style: none;
+}
+
+/* Tables */
+
+table {
+	border-top: 1px solid #dddddd;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border-color: #dddddd;
+	padding: 1em 10px;
+	width: 50%;
+}
+
+
+th {
+	background-color: #eeeeee;
+	border-color: #dddddd;
+	text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #f4f4f4;
+  }
+
+table table {
+	margin: 10px 0;
+	width: auto;
+}
+
+table table th, table table td {
+	background-color: #fff;
+	border: 1px solid #d9d9d9;
+	padding: 0.2em 0.5em;
+	width: auto;
+}
+
+blockquote
+{
+	border-color: #b3b3b3;
+	color: #b3b3b3;
+	margin-left: 0;
+	margin-right: auto;
+	width: 96%;
+	padding: 0 0.5em;
+	border-left: 3px solid;
+}
+
+/* Forms */
+
+form {
+  border-top: 1px solid #ccc;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+/* Special */
+
+#title {
+
+	color: black;
+	padding: 1em;
+}
+
+.section-name {
+
+	background: url('../images/arrow_down.gif') no-repeat center left;
+	color: #4d4d4d;
+	cursor: pointer;
+	display: block;
+	font-size: 1em;
+	padding: 5px 10px 5px 16px;
+	text-transform: uppercase;
+}
+
+.deselected {
+	background-image: url('../images/arrow_right.gif');
+}
+
+.section {
+	
+	border-color: #b8bdc7;
+	border-style: solid;
+	border-width: 1px 0;
+	background-color: white;
+}
+
+.code-block pre
+{
+	white-space: pre-wrap;
+	width: 96%;
+	margin-bottom: 24px;
+	overflow: hidden;
+	padding: 3px 10px;
+	-webkit-border-radius: 3px;
+	border: 1px solid;
+	background-color: #eeeeee;
+	border-color: #dddddd;
+}
+
+.code-block code
+{
+	white-space: nowrap;
+	font-size: 0.9em;
+	padding: 2px;
+	-webkit-border-radius: 3px;
+	border: 1px solid;
+	background-color: #eeeeee;
+	border-color: #dddddd;
+}
+
+.code-block pre code
+{
+	white-space: pre-wrap;
+	border: none;
+	padding: 0;
+	background-color: transparent;
+	-webkit-border-radius: 0;
+}

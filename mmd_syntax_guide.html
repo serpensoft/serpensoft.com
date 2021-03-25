@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>iWriter Pro | MultiMarkdown Syntax Guide</title>
+	<meta name = "viewport" content = "width = device-width"/> <meta name = "viewport" content = "initial-scale = 1.0"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="res/markdown-reference.css" />
+	<script src="res/jquery-1.4.2.min.js"></script>
+	<script src="res/guide.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+		onload="renderMathInElement(document.body);"></script>
+	<style>
+		li.selected
+		{
+			color: #cccccc;
+			text-decoration: line-through;
+			list-style: outside disc url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='13' height='13'><rect stroke='lightgray' stroke-width='0.5' stroke-miterlimit='10' fill='none' x='0.25' y='0.25' width='12.5' height='12.5' rx='2' /> <g transform='translate(7, 6) rotate(45)' stroke='none' fill='#139aff'><rect x='-3' y='2' width='5' height='2' rx='1' /><rect x='0' y='-3.5' width='2' height='7' rx='1' /></g></svg>");
+		}
+
+		li.unselected
+		{
+			list-style: outside disc url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='13' height='13'><rect stroke='lightgray' stroke-width='0.5' stroke-miterlimit='10' fill='none' x='0.25' y='0.25' width='12.5' height='12.5' rx='2' /></svg>");
+		}
+	</style>
+</head>
+<body>
+
+<h1 id="title">iWriter Pro | MultiMarkdown Syntax Guide</h1>
+
+<h2 class="section-name">text</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>This text is **bold**.</code></pre> </td>
+<td> <p>This text is <strong>bold</strong>.</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>This text is also __bold__.</code></pre> </td>
+<td> <p>This text is also <strong>bold</strong>.</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>This text is *italicized*.</code></pre> </td>
+<td> <p>This text is <em>italicized</em>.</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>This text is also _italicized_.</code></pre> </td>
+<td> <p>This text is also <em>italicized</em>.</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>And this is the ~~strikethrough~~ style.</code></pre> </td>
+<td> <p>And this is the <del>strikethrough</del> style.</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>`This is some code.`</code></pre> </td>
+<td class="code-block"> <p><code>This is some code.</code></p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>	This is a longer
+	section of code
+	on multiple lines.</code></pre> </td>
+<td class="code-block"> <pre><code>This is a longer
+section of code
+on multiple lines.</code></pre>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>m^2</code></pre> </td>
+<td> <p>m<sup>2</sup></p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>x^2,y^</code></pre> </td>
+<td> <p>x<sup>2,y</sup></p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>x~z</code></pre> </td>
+<td> <p>x<sub>z</sub></p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>C~6~H~12~O~6~</code></pre> </td>
+<td> <p>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>Escaped characters -- \&</code></pre> </td>
+<td> <p>Escaped characters &#8211; &amp;</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>"smart quotes"</code></pre> </td>
+<td> <p>&#8220;smart quotes&#8221;</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>'smart quotes'</code></pre> </td>
+<td> <p>&#8216;smart quotes&#8217;</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>apostrophe's</code></pre> </td>
+<td> <p>apostrophe&#8217;s</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>en -- dash</code></pre> </td>
+<td> <p>en &#8211; dash</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>em --- dash</code></pre> </td>
+<td> <p>em &#8212; dash</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>ellipsis ...</code></pre> </td>
+<td> <p>ellipsis &#8230;</p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">abbreviations</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>HTML and HTML
+
+[>HTML]: Hypertext Markup Language</code></pre> </td>
+<td> <p>Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>) and <abbr title="Hypertext Markup Language">HTML</abbr></p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>[>(HTML) Hypertext Markup Language] and HTML</code></pre> </td>
+<td> <p>Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>) and HTML</p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">blockquotes</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Regular text.
+
+> Blockquote
+> with two lines.
+And one more line.
+>> And a second level blockquote.</code></pre> </td>
+<td> <p>Regular text.</p>
+
+<blockquote>
+<p>Blockquote
+with two lines.
+And one more line.</p>
+
+<blockquote>
+<p>And a second level blockquote.</p>
+</blockquote>
+</blockquote>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">citations</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Cite a source.[p. 42][#source]
+
+[#source]: John Doe. *A Totally Fake Book*. Vanity Press, 2006.</code></pre> </td>
+<td> <p>Cite a source.<a href="#cn:1" id="cnref:1" title="see citation" class="citation">(p. 42, 1)</a></p>
+
+<div class="citations">
+<hr />
+<ol>
+
+<li id="cn:1">
+<p>John Doe. <em>A Totally Fake Book</em>. Vanity Press, 2006. <a href="#cnref:1" title="return to body" class="reversecitation">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>Cite a source.[p. 42][#John Doe. *A Totally Fake Book*. Vanity Press, 2006.]
+
+</code></pre> </td>
+<td> <p>Cite a source.<a href="#cn:1" id="cnref:1" title="see citation" class="citation">(p. 42, 1)</a></p>
+
+<div class="citations">
+<hr />
+<ol>
+
+<li id="cn:1">
+<p>John Doe. <em>A Totally Fake Book</em>. Vanity Press, 2006. <a href="#cnref:1" title="return to body" class="reversecitation">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<h2 class="section-name">cross references</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code># Intro #
+
+# Conclusion [fin] #
+
+Link to [Intro].
+
+Link to the [end][fin].</code></pre> </td>
+
+<td> <h1>Intro</h1>
+
+<h1 id="fin">Conclusion</h1>
+
+<p>Link to <a href="#intro">Intro</a>.</p>
+
+<p>Link to the <a href="#fin">end</a>.</p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">definition lists</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Apple
+:   Pomaceous fruit of plants of the genus Malus in 
+    the family Rosaceae.
+
+    Also the makers of really great products.
+</code></pre> </td>
+<td> <dl>
+<dt>Apple</dt>
+<dd><p>Pomaceous fruit of plants of the genus Malus in
+the family Rosaceae.</p>
+
+<p>Also the makers of really great products.</p></dd>
+</dl>
+
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">fenced code blocks</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>```
+This is a fenced
+code block.
+```
+</code></pre> </td>
+<td class="code-block"> <pre><code>This is a fenced
+code block.
+</code></pre>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>```perl
+# Demonstrate Syntax Highlighting if you link to highlight.js #
+# http://softwaremaniacs.org/soft/highlight/en/
+print "Hello, world!\n";
+$a = 0;
+while ($a < 10) {
+print "$a...\n";
+$a++;
+}
+```
+</code></pre> </td>
+<td class="code-block"> <pre><code># Demonstrate Syntax Highlighting if you link to highlight.js #
+# http://softwaremaniacs.org/soft/highlight/en/
+print &quot;Hello, world!\n&quot;;
+$a = 0;
+while ($a &lt; 10) {
+print &quot;$a...\n&quot;;
+$a++;
+}
+</code></pre>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">footnotes</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Text.[^foot]
+
+[^foot]: This is a footnote.</code></pre> </td>
+<td> <p>Text.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><sup>1</sup></a></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>This is a footnote. <a href="#fnref:1" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>Text.[^This is an inline footnote.]</code></pre> </td>
+<td> <p>Text.<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote"><sup>1</sup></a></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1">
+<p>This is an inline footnote. <a href="#fnref:1" title="return to body" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">glossary</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>[?Glossary] is a glossary term.
+
+[?Glossary]: The glossary collects information about
+important terms used in your document.</code></pre> </td>
+<td> <p><a href="#gn:1" id="gnref:1" title="see glossary" class="glossary">Glossary</a> is a glossary term.</p>
+
+<div class="glossary">
+<hr />
+<ol>
+
+<li id="gn:1">
+Glossary: <p>The glossary collects information about
+important terms used in your document. <a href="#gnref:1" title="return to body" class="reverseglossary">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>[?(Glossary) The glossary collects information
+about important terms used in your document]
+is a glossary term.</code></pre> </td>
+<td> <p><a href="#gn:1" id="gnref:1" title="see glossary" class="glossary">Glossary</a>
+is a glossary term.</p>
+
+<div class="glossary">
+<hr />
+<ol>
+
+<li id="gn:1">
+Glossary: <p>The glossary collects information
+about important terms used in your document <a href="#gnref:1" title="return to body" class="reverseglossary">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">headings</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code># H1 Header
+</code></pre> </td>
+<td> <h1 id="h1header">H1 Header</h1>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>## H2 Header ##
+</code></pre> </td>
+<td> <h2 id="h2header">H2 Header</h2>
+ </td>
+</tr>
+<tr>
+<td> <pre><code># Header with custom id [custom]
+</code></pre> </td>
+<td> <h1 id="custom">Header with custom id</h1>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>H1 Header
+=========</code></pre> </td>
+<td> <h1 id="h1header">H1 Header</h1>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>H2 Header
+---------</code></pre> </td>
+<td> <h2 id="h2header">H2 Header</h2>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">horizontal rules</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>---</code></pre> </td>
+<td> <hr />
+ </td>
+</tr>
+<tr>
+<td> <pre><code>- - - </code></pre> </td>
+<td> <hr />
+ </td>
+</tr>
+<tr>
+<td> <pre><code>****</code></pre> </td>
+<td> <hr />
+ </td>
+</tr>
+<tr>
+<td> <pre><code>* * * * * * </code></pre> </td>
+<td> <hr />
+ </td>
+</tr>
+<tr>
+<td> <pre><code>______</code></pre> </td>
+<td> <hr />
+ </td>
+</tr>
+<tr>
+<td> <pre><code>_ _ _ _ </code></pre> </td>
+<td> <hr />
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">html blocks</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>&lt;div>*bar*&lt;/div></code></pre> </td>
+<td> <div>*bar*</div> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;div>
+*bar*
+&lt;/div></code></pre> </td>
+<td> <div>
+*bar*
+</div> </td>
+</tr>
+<tr>
+<td> <pre><code>foo
+&lt;div>
+*bar*
+&lt;/div></code></pre> </td>
+<td> <p>foo</p>
+
+<div>
+*bar*
+</div> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;div>
+*bar*
+
+&lt;/div></code></pre> </td>
+<td> <div>
+*bar*
+
+</div> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;div>
+
+*bar*
+
+&lt;/div></code></pre> </td>
+<td> <div>
+
+<p><em>bar</em></p>
+
+</div> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;del>*bar*&lt;/del></code></pre> </td>
+<td> <p><del><em>bar</em></del></p> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;del>
+*bar*
+&lt;/del></code></pre> </td>
+<td> <del>
+*bar*
+</del> </td>
+</tr>
+<tr>
+<td> <pre><code>foo
+&lt;del>
+*bar*
+&lt;/del></code></pre> </td>
+<td> <p>foo
+<del>
+<em>bar</em>
+</del></p> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;del>
+*bar*
+
+&lt;/del></code></pre> </td>
+<td> <del>
+*bar*
+
+<p></del></p> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;del>
+
+*bar*
+
+&lt;/del></code></pre> </td>
+<td> <del>
+
+<p><em>bar</em></p>
+
+<p></del></p> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">images</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Image - ![image](mmd.png)</code></pre> </td>
+<td> <p>Image - <img src="images/mmd.png" alt="image" height="50" width="100" /></p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>Image with title - ![image](mmd.png "This is a title")</code></pre> </td>
+<td> <p>Image with title - <img src="images/mmd.png" alt="image" title="This is a title" height="50" width="100" /></p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>Image with attributes - ![image].
+
+[image]: mmd.png "This is a title" height=25px width=50px</code></pre> </td>
+<td> <p>Image with attributes - <img src="images/mmd.png" alt="image" id="image" title="This is a title" height="25" width="50" />.</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>Image by itself becomes a figure.
+
+![This is the caption][image]
+
+[image]: mmd.png "This is the title" height=45px width=120px</code></pre> </td>
+<td> <p>Image by itself becomes a figure.</p>
+
+<figure>
+<img src="images/mmd.png" alt="This is the caption" id="image" title="This is the title" height="50" width="100" />
+<figcaption><i>This is the caption</i></figcaption>
+</figure>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">linebreaks</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>foo
+bar</code></pre> </td>
+<td> <p>foo
+bar</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>foo  
+bar</code></pre> </td>
+<td> <p>foo<br />
+bar</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>foo\
+bar</code></pre> </td>
+<td> <p>foo<br />
+bar</p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">links</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>Link to [MMD](http://fletcherpenney.net/mmd)</code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MMD</a></p> </td>
+</tr>
+<tr>
+<td> <pre><code>Link to [MultiMarkdown][MMD].
+
+[MMD]: http://fletcherpenney.net/mmd</code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MultiMarkdown</a>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>Link to [MMD][].
+
+[MMD]: http://fletcherpenney.net/mmd</code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MMD</a>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>Link to [MMD].
+
+[MMD]: http://fletcherpenney.net/mmd</code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MMD</a>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>Link to [MMD].
+
+[MMD]: http://fletcherpenney.net/mmd style="border: solid black 1px;"</code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd" style="border: solid black 1px;">MMD</a>.</p> </td>
+</tr>
+<tr>
+<td> <pre><code>Link to &lt;http://fletcherpenney.net/mmd></code></pre> </td>
+<td> <p>Link to <a href="http://fletcherpenney.net/mmd">http://fletcherpenney.net/mmd</a></p> </td>
+</tr>
+<tr>
+<td> <pre><code>&lt;foo@example.com></code></pre> </td>
+<td> <p><a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#x66;&#111;&#111;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#x2e;&#x63;&#x6f;&#109;">&#102;&#x6f;&#111;&#x40;&#101;&#x78;&#x61;&#x6d;&#112;&#x6c;&#x65;&#x2e;&#99;&#111;&#109;</a></p> </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">lists</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><i>Unordered Lists:</i>
+<pre><code>* one
+* two
+	* a
+	* b
+* three</code></pre> </td>
+<td> <ul>
+<li>one</li>
+<li>two
+
+<ul>
+<li>a</li>
+<li>b</li>
+</ul></li>
+<li>three</li>
+</ul>
+ </td>
+</tr>
+<tr>
+<td><i>Ordered Lists:</i>
+ <pre><code>1. one
+2. two
+	1. a
+	2. b
+3. three</code></pre> </td>
+<td>
+<ol>
+<li>one</li>
+<li>two
+
+<ol>
+<li>a</li>
+<li>b</li>
+</ol></li>
+<li>three</li>
+</ol>
+ </td>
+</tr>
+<tr>
+	<td> 
+		<i>Todo Lists:</i>
+		<pre><code>
+ -[ ] todo item 1
+ -[ ] todo item 2
+ -[×] todo item 3
+	</code></pre> </td>
+	<td> 
+	<ul>
+	<li class="unselected">todo item 1</li>
+	<li class="unselected">todo item 2</li>
+	<li class="selected">todo item 3</li>
+	</ul>
+	 </td>
+	</tr>
+	<tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">math</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>A formula, \\({e}^{i\pi }+1=0\\), inside a paragraph.</code></pre> </td>
+<td> <p>A formula, <span class="math">\({e}^{i\pi }+1=0\)</span>, inside a paragraph.</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>A formula, ${e}^{i\pi }+1=0$, inside a paragraph.</code></pre> </td>
+<td> <p>A formula, <span class="math">\({e}^{i\pi }+1=0\)</span>, inside a paragraph.</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>\\[{e}^{i\pi }+1=0\\]</code></pre> </td>
+<td> <p><span class="math">\[{e}^{i\pi }+1=0\]</span></p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>$${e}^{i\pi }+1=0$$</code></pre> </td>
+<td> <p><span class="math">\[{e}^{i\pi }+1=0\]</span></p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<h2 class="section-name">diagrams</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> 
+<pre><code>
+```flow
+st=>start: Start:>http://www.google.com[blank]
+e=>end:>http://www.google.com
+op1=>operation: My Operation
+sub1=>subroutine: My Subroutine
+cond=>condition: Yes
+or No?:>http://www.google.com
+io=>inputoutput: catch something...
+para=>parallel: parallel tasks
+
+st->op1->cond
+cond(yes)->io->e
+cond(no)->para
+para(path1, bottom)->sub1(right)->op1
+para(path2, top)->op1
+```
+
+You can find the complete syntax guide here: <a href="http://flowchart.js.org">Flowhart Usage</a>.
+</code></pre>
+</td>
+<td>
+<svg height="540.421875" version="1.1" width="382.7890625" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382.7890625 540.421875" preserveAspectRatio="xMidYMid meet" style="overflow: hidden; position: relative; left: -0.40625px; top: -0.5px;"><desc>Created with Raphaël 2.3.0</desc><defs><path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block"></path><marker id="raphael-marker-endblock33-objs80qs" markerHeight="3" markerWidth="3" orient="auto" refX="1.5" refY="1.5"><use xlink:href="#raphael-marker-block" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none"></use></marker><marker id="raphael-marker-endblock33-objtjlzt" markerHeight="3" markerWidth="3" orient="auto" refX="1.5" refY="1.5"><use xlink:href="#raphael-marker-block" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none"></use></marker><marker id="raphael-marker-endblock33-obj04sgu" markerHeight="3" markerWidth="3" orient="auto" refX="1.5" refY="1.5"><use xlink:href="#raphael-marker-block" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none"></use></marker><marker id="raphael-marker-endblock33-objwunz7" markerHeight="3" markerWidth="3" orient="auto" refX="1.5" refY="1.5"><use xlink:href="#raphael-marker-block" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none"></use></marker><marker id="raphael-marker-endblock33-obj5rltg" markerHeight="3" markerWidth="3" orient="auto" refX="1.5" refY="1.5"><use xlink:href="#raphael-marker-block" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none"></use></marker><marker id="raphael-marker-endblock33-objhodaj" markerHeight="3" markerWidth="3" orient="auto" refX="1.5" refY="1.5"><use xlink:href="#raphael-marker-block" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none"></use></marker><marker id="raphael-marker-endblock33-objydryk" markerHeight="3" markerWidth="3" orient="auto" refX="1.5" refY="1.5"><use xlink:href="#raphael-marker-block" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none"></use></marker><marker id="raphael-marker-endblock33-objzkpe8" markerHeight="3" markerWidth="3" orient="auto" refX="1.5" refY="1.5"><use xlink:href="#raphael-marker-block" transform="rotate(180 1.5 1.5) scale(0.6,0.6)" stroke-width="1.6667" fill="black" stroke="none"></use></marker></defs><a xlink:href="http://www.google.com" xlink:show="new"><rect x="0" y="0" width="49.578125" height="35.65625" rx="20" ry="20" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="st" transform="matrix(1,0,0,1,68.0234,27.5234)" style=""></rect></a><a xlink:href="http://www.google.com" xlink:show="new"><text x="10" y="17.828125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="stt" class="flowchartt" transform="matrix(1,0,0,1,68.0234,27.5234)" stroke-width="1" style="text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375">Start</tspan></text></a><rect x="0" y="0" width="104.046875" height="35.65625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="op1" transform="matrix(1,0,0,1,40.7891,140.7031)" style=""></rect><text x="10" y="17.828125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="op1t" class="flowchartt" transform="matrix(1,0,0,1,40.7891,140.7031)" stroke-width="1" style="text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375">My Operation</tspan></text><a xlink:href="http://www.google.com"><path fill="#ffffff" stroke="#000000" d="M27.01171875,19.67578125L0,39.3515625L54.0234375,78.703125L108.046875,39.3515625L54.0234375,0L0,39.3515625" stroke-width="3" id="cond" class="flowchart" transform="matrix(1,0,0,1,38.7891,232.3594)" style=""></path></a><a xlink:href="http://www.google.com"><text x="32.01171875" y="39.3515625" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="condt" class="flowchartt" transform="matrix(1,0,0,1,38.7891,232.3594)" stroke-width="1" style="text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="-3.546875">Yes</tspan><tspan dy="16.8" x="32.01171875">or No?</tspan></text></a><path fill="#ffffff" stroke="#000000" d="M10,17.828125L0,35.65625L153.625,35.65625L173.625,0L20,0L10,17.828125" stroke-width="3" id="io" class="flowchart" transform="matrix(1,0,0,1,6,388.5859)" style=""></path><text x="30" y="17.828125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="iot" class="flowchartt" transform="matrix(1,0,0,1,6,388.5859)" stroke-width="1" style="text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375">catch something...</tspan></text><a xlink:href="http://www.google.com"><rect x="0" y="0" width="44.921875" height="35.65625" rx="20" ry="20" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="e" transform="matrix(1,0,0,1,70.3516,501.7656)" style=""></rect></a><a xlink:href="http://www.google.com"><text x="10" y="17.828125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="et" class="flowchartt" transform="matrix(1,0,0,1,70.3516,501.7656)" stroke-width="1" style="text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375">End</tspan></text></a><rect x="0" y="0" width="101.703125" height="35.65625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="para" transform="matrix(1,0,0,1,238.7969,253.8828)" style=""></rect><text x="10" y="17.828125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="parat" class="flowchartt" transform="matrix(1,0,0,1,238.7969,253.8828)" stroke-width="1" style="text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375">parallel tasks</tspan></text><rect x="0" y="0" width="130.28125" height="35.65625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" class="flowchart" id="sub1" transform="matrix(1,0,0,1,224.5078,367.0625)" style=""></rect><rect x="10" y="0" width="110.28125" height="35.65625" rx="0" ry="0" fill="#ffffff" stroke="#000000" stroke-width="3" id="sub1i" transform="matrix(1,0,0,1,224.5078,367.0625)" style=""></rect><text x="20" y="17.828125" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" id="sub1t" class="flowchartt" transform="matrix(1,0,0,1,224.5078,367.0625)" stroke-width="1" style="text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375">My Subroutine</tspan></text><path fill="none" stroke="#000000" d="M92.8125,63.1796875C92.8125,63.1796875,92.8125,119.65465292334557,92.8125,136.20005294971634" stroke-width="3" marker-end="url(#raphael-marker-endblock33-objs80qs)" style=""></path><path fill="none" stroke="#000000" d="M92.8125,176.359375C92.8125,176.359375,92.8125,214.56014585494995,92.8125,227.85953531763516" stroke-width="3" marker-end="url(#raphael-marker-endblock33-objtjlzt)" style=""></path><path fill="none" stroke="#000000" d="M92.8125,311.0625C92.8125,311.0625,92.8125,367.53746542334557,92.8125,384.08286544971634" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj04sgu)" style=""></path><text x="97.8125" y="321.0625" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" stroke-width="1" style="text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.859375">yes</tspan></text><path fill="none" stroke="#000000" d="M146.8359375,271.7109375C146.8359375,271.7109375,215.83619578927755,271.7109375,234.29915552683815,271.7109375" stroke-width="3" marker-end="url(#raphael-marker-endblock33-objwunz7)" style=""></path><text x="151.8359375" y="261.7109375" text-anchor="start" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" stroke-width="1" style="text-anchor: start; font-family: Arial; font-size: 14px;"><tspan dy="4.8515625">no</tspan></text><path fill="none" stroke="#000000" d="M92.8125,424.2421875C92.8125,424.2421875,92.8125,480.71715292334557,92.8125,497.26255294971634" stroke-width="3" marker-end="url(#raphael-marker-endblock33-obj5rltg)" style=""></path><path fill="none" stroke="#000000" d="M289.6484375,289.5390625C289.6484375,289.5390625,289.6484375,346.01402792334557,289.6484375,362.55942794971634" stroke-width="3" marker-end="url(#raphael-marker-endblock33-objhodaj)" style=""></path><path fill="none" stroke="#000000" d="M289.6484375,253.8828125C289.6484375,253.8828125,289.6484375,105.703125,289.6484375,105.703125C289.6484375,105.703125,92.8125,105.703125,92.8125,105.703125C92.8125,105.703125,92.8125,126.74619674682617,92.8125,136.19913913309574" stroke-width="3" marker-end="url(#raphael-marker-endblock33-objydryk)" style=""></path><path fill="none" stroke="#000000" d="M354.7890625,384.890625C354.7890625,384.890625,379.7890625,384.890625,379.7890625,384.890625C379.7890625,384.890625,379.7890625,95.703125,379.7890625,95.703125C379.7890625,95.703125,92.8125,95.703125,92.8125,95.703125C92.8125,95.703125,92.8125,124.80626225471497,92.8125,136.2030962773133" stroke-width="3" marker-end="url(#raphael-marker-endblock33-objzkpe8)" style=""></path></svg>
+</td>
+</tr>
+
+<tr>
+<td><pre><code>
+```mermaid
+stateDiagram
+[*] --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
+```
+
+You can find the complete syntax guide here: <a href="https://mermaid-js.github.io/mermaid/#/README">Mermaid Usage</a>.
+</code></pre>
+</td>
+<td> 
+
+<div class="mermaid" data-processed="true"><svg id="mermaid-1590906652768" width="192.19921875" xmlns="http://www.w3.org/2000/svg" viewBox="-27.19921875  0 109.828125 267.34375"><style>#mermaid-1590906652768 .label{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);color:#333}#mermaid-1590906652768 .label text{fill:#333}#mermaid-1590906652768 .node rect,#mermaid-1590906652768 .node circle,#mermaid-1590906652768 .node ellipse,#mermaid-1590906652768 .node polygon,#mermaid-1590906652768 .node path{fill:#ECECFF;stroke:#9370db;stroke-width:1px}#mermaid-1590906652768 .node .label{text-align:center}#mermaid-1590906652768 .node.clickable{cursor:pointer}#mermaid-1590906652768 .arrowheadPath{fill:#333}#mermaid-1590906652768 .edgePath .path{stroke:#333;stroke-width:1.5px}#mermaid-1590906652768 .edgeLabel{background-color:#e8e8e8;text-align:center}#mermaid-1590906652768 .cluster rect{fill:#ffffde;stroke:#aa3;stroke-width:1px}#mermaid-1590906652768 .cluster text{fill:#333}#mermaid-1590906652768 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:12px;background:#ffffde;border:1px solid #aa3;border-radius:2px;pointer-events:none;z-index:100}#mermaid-1590906652768 .actor{stroke:#ccf;fill:#ECECFF}#mermaid-1590906652768 text.actor{fill:#000;stroke:none}#mermaid-1590906652768 .actor-line{stroke:grey}#mermaid-1590906652768 .messageLine0{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1590906652768 .messageLine1{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1590906652768 #arrowhead{fill:#333}#mermaid-1590906652768 .sequenceNumber{fill:#fff}#mermaid-1590906652768 #sequencenumber{fill:#333}#mermaid-1590906652768 #crosshead path{fill:#333 !important;stroke:#333 !important}#mermaid-1590906652768 .messageText{fill:#333;stroke:none}#mermaid-1590906652768 .labelBox{stroke:#ccf;fill:#ECECFF}#mermaid-1590906652768 .labelText{fill:#000;stroke:none}#mermaid-1590906652768 .loopText{fill:#000;stroke:none}#mermaid-1590906652768 .loopLine{stroke-width:2;stroke-dasharray:'2 2';stroke:#ccf}#mermaid-1590906652768 .note{stroke:#aa3;fill:#fff5ad}#mermaid-1590906652768 .noteText{fill:black;stroke:none;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:14px}#mermaid-1590906652768 .activation0{fill:#f4f4f4;stroke:#666}#mermaid-1590906652768 .activation1{fill:#f4f4f4;stroke:#666}#mermaid-1590906652768 .activation2{fill:#f4f4f4;stroke:#666}#mermaid-1590906652768 .mermaid-main-font{font-family:"trebuchet ms", verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1590906652768 .section{stroke:none;opacity:0.2}#mermaid-1590906652768 .section0{fill:rgba(102,102,255,0.49)}#mermaid-1590906652768 .section2{fill:#fff400}#mermaid-1590906652768 .section1,#mermaid-1590906652768 .section3{fill:#fff;opacity:0.2}#mermaid-1590906652768 .sectionTitle0{fill:#333}#mermaid-1590906652768 .sectionTitle1{fill:#333}#mermaid-1590906652768 .sectionTitle2{fill:#333}#mermaid-1590906652768 .sectionTitle3{fill:#333}#mermaid-1590906652768 .sectionTitle{text-anchor:start;font-size:11px;text-height:14px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1590906652768 .grid .tick{stroke:#d3d3d3;opacity:0.8;shape-rendering:crispEdges}#mermaid-1590906652768 .grid .tick text{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1590906652768 .grid path{stroke-width:0}#mermaid-1590906652768 .today{fill:none;stroke:red;stroke-width:2px}#mermaid-1590906652768 .task{stroke-width:2}#mermaid-1590906652768 .taskText{text-anchor:middle;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1590906652768 .taskText:not([font-size]){font-size:11px}#mermaid-1590906652768 .taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1590906652768 .taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}#mermaid-1590906652768 .task.clickable{cursor:pointer}#mermaid-1590906652768 .taskText.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1590906652768 .taskTextOutsideLeft.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1590906652768 .taskTextOutsideRight.clickable{cursor:pointer;fill:#003163 !important;font-weight:bold}#mermaid-1590906652768 .taskText0,#mermaid-1590906652768 .taskText1,#mermaid-1590906652768 .taskText2,#mermaid-1590906652768 .taskText3{fill:#fff}#mermaid-1590906652768 .task0,#mermaid-1590906652768 .task1,#mermaid-1590906652768 .task2,#mermaid-1590906652768 .task3{fill:#8a90dd;stroke:#534fbc}#mermaid-1590906652768 .taskTextOutside0,#mermaid-1590906652768 .taskTextOutside2{fill:#000}#mermaid-1590906652768 .taskTextOutside1,#mermaid-1590906652768 .taskTextOutside3{fill:#000}#mermaid-1590906652768 .active0,#mermaid-1590906652768 .active1,#mermaid-1590906652768 .active2,#mermaid-1590906652768 .active3{fill:#bfc7ff;stroke:#534fbc}#mermaid-1590906652768 .activeText0,#mermaid-1590906652768 .activeText1,#mermaid-1590906652768 .activeText2,#mermaid-1590906652768 .activeText3{fill:#000 !important}#mermaid-1590906652768 .done0,#mermaid-1590906652768 .done1,#mermaid-1590906652768 .done2,#mermaid-1590906652768 .done3{stroke:grey;fill:#d3d3d3;stroke-width:2}#mermaid-1590906652768 .doneText0,#mermaid-1590906652768 .doneText1,#mermaid-1590906652768 .doneText2,#mermaid-1590906652768 .doneText3{fill:#000 !important}#mermaid-1590906652768 .crit0,#mermaid-1590906652768 .crit1,#mermaid-1590906652768 .crit2,#mermaid-1590906652768 .crit3{stroke:#f88;fill:red;stroke-width:2}#mermaid-1590906652768 .activeCrit0,#mermaid-1590906652768 .activeCrit1,#mermaid-1590906652768 .activeCrit2,#mermaid-1590906652768 .activeCrit3{stroke:#f88;fill:#bfc7ff;stroke-width:2}#mermaid-1590906652768 .doneCrit0,#mermaid-1590906652768 .doneCrit1,#mermaid-1590906652768 .doneCrit2,#mermaid-1590906652768 .doneCrit3{stroke:#f88;fill:#d3d3d3;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}#mermaid-1590906652768 .milestone{transform:rotate(45deg) scale(0.8, 0.8)}#mermaid-1590906652768 .milestoneText{font-style:italic}#mermaid-1590906652768 .doneCritText0,#mermaid-1590906652768 .doneCritText1,#mermaid-1590906652768 .doneCritText2,#mermaid-1590906652768 .doneCritText3{fill:#000 !important}#mermaid-1590906652768 .activeCritText0,#mermaid-1590906652768 .activeCritText1,#mermaid-1590906652768 .activeCritText2,#mermaid-1590906652768 .activeCritText3{fill:#000 !important}#mermaid-1590906652768 .titleText{text-anchor:middle;font-size:18px;fill:#000;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1590906652768 g.classGroup text{fill:#9370db;stroke:none;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family);font-size:10px}#mermaid-1590906652768 g.classGroup text .title{font-weight:bolder}#mermaid-1590906652768 g.clickable{cursor:pointer}#mermaid-1590906652768 g.classGroup rect{fill:#ECECFF;stroke:#9370db}#mermaid-1590906652768 g.classGroup line{stroke:#9370db;stroke-width:1}#mermaid-1590906652768 .classLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5}#mermaid-1590906652768 .classLabel .label{fill:#9370db;font-size:10px}#mermaid-1590906652768 .relation{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1590906652768 .dashed-line{stroke-dasharray:3}#mermaid-1590906652768 #compositionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1590906652768 #compositionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1590906652768 #aggregationStart{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1590906652768 #aggregationEnd{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1590906652768 #dependencyStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1590906652768 #dependencyEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1590906652768 #extensionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1590906652768 #extensionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1590906652768 .commit-id,#mermaid-1590906652768 .commit-msg,#mermaid-1590906652768 .branch-label{fill:lightgrey;color:lightgrey;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1590906652768 .pieTitleText{text-anchor:middle;font-size:25px;fill:#000;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1590906652768 .slice{font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1590906652768 g.stateGroup text{fill:#9370db;stroke:none;font-size:10px;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}#mermaid-1590906652768 g.stateGroup text{fill:#9370db;stroke:none;font-size:10px}#mermaid-1590906652768 g.stateGroup .state-title{font-weight:bolder;fill:#000}#mermaid-1590906652768 g.stateGroup rect{fill:#ECECFF;stroke:#9370db}#mermaid-1590906652768 g.stateGroup line{stroke:#9370db;stroke-width:1}#mermaid-1590906652768 .transition{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1590906652768 .stateGroup .composit{fill:white;border-bottom:1px}#mermaid-1590906652768 .stateGroup .alt-composit{fill:#e0e0e0;border-bottom:1px}#mermaid-1590906652768 .state-note{stroke:#aa3;fill:#fff5ad}#mermaid-1590906652768 .state-note text{fill:black;stroke:none;font-size:10px}#mermaid-1590906652768 .stateLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5}#mermaid-1590906652768 .stateLabel text{fill:#000;font-size:10px;font-weight:bold;font-family:'trebuchet ms', verdana, arial;font-family:var(--mermaid-font-family)}:root{--mermaid-font-family: '"trebuchet ms", verdana, arial';--mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive}
+
+:root { --mermaid-font-family: -apple-system, Helvetica Neue}</style><style>#mermaid-1590906652768 {
+    color: rgb(30, 27, 23);
+    font: normal normal normal normal 18px/32.400001525878906px -apple-system, "Helvetica Neue";
+  }</style><g></g><defs><marker id="dependencyEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 19,7 L9,13 L14,7 L9,1 Z"></path></marker></defs><g id="start1" class="stateGroup" transform="translate(12.0078125,0 )" data-x-shift="12.0078125"><circle r="5" cx="13" cy="13" style="stroke: black; fill: black;"></circle></g><g id="Still" class="stateGroup" transform="translate(0,46 )" data-x-shift="0"><rect x="8" y="8" width="34.015625" height="27.78125" rx="5"></rect><text x="16" y="26" font-size="24" class="state-title">Still</text></g><g id="end1" class="stateGroup" transform="translate(0.0078125,237.34375 )" data-x-shift="0.0078125"><circle r="7" cx="15" cy="15" style="stroke: black; fill: white;"></circle><circle r="5" cx="15" cy="15" style="stroke: black; fill: black;"></circle></g><g id="Moving" class="stateGroup" transform="translate(15.80078125,109.78125 )" data-x-shift="15.80078125"><rect x="8" y="8" width="50.828125" height="27.78125" rx="5"></rect><text x="16" y="26" font-size="24" class="state-title">Moving</text></g><g id="Crash" class="stateGroup" transform="translate(19.14453125,173.5625 )" data-x-shift="19.14453125"><rect x="8" y="8" width="44.140625" height="27.78125" rx="5"></rect><text x="16" y="26" font-size="24" class="state-title">Crash</text></g><path d="M25.0078125,26L25.0078125,27.666666666666668C25.0078125,29.333333333333332,25.0078125,32.666666666666664,25.0078125,36C25.0078125,39.333333333333336,25.0078125,42.666666666666664,25.0078125,44.333333333333336L25.0078125,46" id="edge0" class="transition" marker-end="url(#dependencyEnd)"></path><path d="M0,85.93107575991871L-3.1998697916666665,88.2394381332656C-6.399739583333333,90.54780050661248,-12.799479166666666,95.16452525330624,-15.999348958333334,102.78799179331979C-19.19921875,110.41145833333333,-19.19921875,121.04166666666667,-19.19921875,131.671875C-19.19921875,142.30208333333334,-19.19921875,152.93229166666666,-19.19921875,163.5625C-19.19921875,174.19270833333334,-19.19921875,184.82291666666666,-19.19921875,195.453125C-19.19921875,206.08333333333334,-19.19921875,216.71354166666666,-15.998046875,224.3682027592212C-12.796875,232.02286385177572,-6.39453125,236.70197770355148,-3.193359375,239.04153462943933L0.0078125,241.38109155532717" id="edge1" class="transition" marker-end="url(#dependencyEnd)"></path><path d="M25.0078125,89.78125L25.0078125,91.44791666666667C25.0078125,93.11458333333333,25.0078125,96.44791666666667,26.2729194737057,99.78125C27.538026447411397,103.11458333333333,30.068240394822798,106.44791666666667,31.333347368528496,108.11458333333333L32.5984543422342,109.78125" id="edge2" class="transition" marker-end="url(#dependencyEnd)"></path><path d="M56.079125964600685,109.78125L56.601745595500574,108.11458333333333C57.12436522640045,106.44791666666667,58.16960448820023,103.11458333333333,56.90449751449453,99.78125C55.63939054078883,96.44791666666667,52.063937331577655,93.11458333333333,50.27621072697207,91.44791666666667L48.488484122366486,89.78125" id="edge3" class="transition" marker-end="url(#dependencyEnd)"></path><path d="M49.21484375,153.5625L49.21484375,155.22916666666666C49.21484375,156.89583333333334,49.21484375,160.22916666666666,49.21484375,163.5625C49.21484375,166.89583333333334,49.21484375,170.22916666666666,49.21484375,171.89583333333334L49.21484375,173.5625" id="edge4" class="transition" marker-end="url(#dependencyEnd)"></path><path d="M49.21484375,217.34375L49.21484375,219.01041666666666C49.21484375,220.67708333333334,49.21484375,224.01041666666666,46.013671875,228.0166402592212C42.8125,232.02286385177572,36.41015625,236.70197770355148,33.208984375,239.04153462943933L30.0078125,241.38109155532717" id="edge5" class="transition" marker-end="url(#dependencyEnd)"></path></svg></div>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">metadata</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code> Title:	This is a title
+ Author:	John Appleseed
+ HTML Header: <script>foo</script>
+
+ Content</code></pre> </td>
+<td> <p>Content</p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">raw source</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>`*foo*`{=html}
+</code></pre> </td>
+<td> <p>*foo*</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>```{=html}
+*foo*
+```</code></pre> </td>
+<td> *foo*
+
+ </td>
+</tr>
+<tr>
+<td> <pre><code>```{=*}
+*foo*
+```</code></pre> </td>
+<td> *foo*
+
+ </td>
+</tr>
+<tr>
+<td> <pre><code>`*foo*`{=latex}
+</code></pre> </td>
+<td> <p></p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">table of contents</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code># Table of Contents #
+
+{{TOC}}
+
+# Intro #
+
+# Conclusion #
+</code></pre> </td>
+<td> <h1 id="tableofcontents">Table of Contents</h1>
+
+<div class="TOC">
+
+<ul>
+<li><a href="#tableofcontents">Table of Contents </a></li>
+<li><a href="#intro">Intro </a></li>
+<li><a href="#conclusion">Conclusion </a></li>
+</ul>
+</div>
+
+<h1 id="intro">Intro</h1>
+
+<h1 id="conclusion">Conclusion</h1>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">tables</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>| foo | bar |
+| --- | --- |
+| foo | bar |
+| foo bar  ||
+[*caption*][id]</code></pre> </td>
+<td> <table id="id">
+<caption style="caption-side: bottom;"><em>caption</em></caption>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> foo </th>
+	<th> bar </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td> foo </td>
+	<td> bar </td>
+</tr>
+<tr>
+	<td colspan="2"> foo bar </td>
+</tr>
+</tbody>
+</table>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>| longer header | longer header| longer header |
+| ---: | :---: | :--- |
+| foo | bar | bat |
+
+| foo | bar | bat |
+[*caption*][id]</code></pre> </td>
+<td> <table id="id">
+<caption style="caption-side: bottom;"><em>caption</em></caption>
+<colgroup>
+<col style="text-align:right;"/>
+<col style="text-align:center;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:right;"> longer header </th>
+	<th style="text-align:center;"> longer header</th>
+	<th style="text-align:left;"> longer header </th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:right;"> foo </td>
+	<td style="text-align:center;"> bar </td>
+	<td style="text-align:left;"> bat </td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+	<td style="text-align:right;"> foo </td>
+	<td style="text-align:center;"> bar </td>
+	<td style="text-align:left;"> bat </td>
+</tr>
+</tbody>
+</table>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<h2 class="section-name">transclusion</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code>{{filename.md}}</code></pre> </td>
+<td> <p>This is the content of the file <code>filename.md</code>.</p>
+ </td>
+</tr>
+<tr>
+<td> <pre><code>{{Folder/filename.txt}}</code></pre> </td>
+<td> <p>This is the content of the file <code>filename.txt</code>.</p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<h2 class="section-name">variables</h2>
+
+<div class="section">
+
+<table>
+<colgroup>
+<col />
+<col />
+</colgroup>
+
+<thead>
+<tr>
+	<th> MultiMarkdown	</th>
+	<th> Result	</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td> <pre><code> foo:	bar
+
+ (Variables defined in metadata.)  [%foo]</code></pre> </td>
+<td> <p>(Variables defined in metadata.) bar</p>
+ </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+<h2 class="section-name">Acknowledgements</h2>
+
+<div class="section" style="padding:10px">
+
+<p>Inspired by the MultiMarkdown Syntax Guide by Fletcher T. Penney</p>
+
+<ul>
+<li><a href="https://rawgit.com/fletcher/MultiMarkdown-6-Syntax-Guide/master/index.html">MultiMarkdown Syntax Guide</a></li>
+</ul>
+
+</div>
+
+
+</body>
+</html>
