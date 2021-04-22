@@ -27,7 +27,7 @@
 </head>
 <body>
 
-<h1 id="title">iWriter Pro | MultiMarkdown Syntax Guide</h1>
+<h1 id="title"><a class="header" href="index.html" title="iWriter Pro app">iWriter Pro</a> | MultiMarkdown Syntax Guide</h1>
 
 <h2 class="section-name">text</h2>
 
@@ -92,8 +92,8 @@ on multiple lines.</code></pre>
  </td>
 </tr>
 <tr>
-<td> <pre><code>x^2,y^</code></pre> </td>
-<td> <p>x<sup>2,y</sup></p>
+<td> <pre><code>x^2 y^3</code></pre> </td>
+<td> <p>x<sup>2</sup> y<sup>3</sup></p>
  </td>
 </tr>
 <tr>
@@ -112,13 +112,13 @@ on multiple lines.</code></pre>
  </td>
 </tr>
 <tr>
-<td> <pre><code>"smart quotes"</code></pre> </td>
-<td> <p>&#8220;smart quotes&#8221;</p>
+<td> <pre><code>"double quotes"</code></pre> </td>
+<td> <p>&#8220;double quotes&#8221;</p>
  </td>
 </tr>
 <tr>
-<td> <pre><code>'smart quotes'</code></pre> </td>
-<td> <p>&#8216;smart quotes&#8217;</p>
+<td> <pre><code>'single quotes'</code></pre> </td>
+<td> <p>&#8216;single quotes&#8217;</p>
  </td>
 </tr>
 <tr>
@@ -126,6 +126,7 @@ on multiple lines.</code></pre>
 <td> <p>apostrophe&#8217;s</p>
  </td>
 </tr>
+<!--
 <tr>
 <td> <pre><code>en -- dash</code></pre> </td>
 <td> <p>en &#8211; dash</p>
@@ -136,6 +137,7 @@ on multiple lines.</code></pre>
 <td> <p>em &#8212; dash</p>
  </td>
 </tr>
+-->
 <tr>
 <td> <pre><code>ellipsis ...</code></pre> </td>
 <td> <p>ellipsis &#8230;</p>
@@ -661,111 +663,159 @@ about important terms used in your document <a href="#gnref:1" title="return to 
 
 <div class="section">
 
-<table>
-<colgroup>
-<col />
-<col />
-</colgroup>
+	<table>
+		<colgroup>
+			<col />
+			<col />
+		</colgroup>
 
-<thead>
-<tr>
-	<th> MultiMarkdown	</th>
-	<th> Result	</th>
-</tr>
-</thead>
+		<thead>
+			<tr>
+				<th> MultiMarkdown </th>
+				<th> Result </th>
+			</tr>
+		</thead>
 
-<tbody>
-<tr>
-<td> <pre><code>&lt;div>*bar*&lt;/div></code></pre> </td>
-<td> <div>*bar*</div> </td>
-</tr>
-<tr>
-<td> <pre><code>&lt;div>
+		<tbody>
+			<tr>
+				<td>
+					<p>Inserting a page break:</p>
+					<pre><code>&lt;div style='break-after:page'>&lt;/div></code></pre>
+				</td>
+				<td>
+					<div><i>Page break</i></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<pre><code>&lt;div>*bar*&lt;/div></code></pre>
+				</td>
+				<td>
+					<div>*bar*</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<pre><code>&lt;div>
 *bar*
-&lt;/div></code></pre> </td>
-<td> <div>
-*bar*
-</div> </td>
-</tr>
-<tr>
-<td> <pre><code>foo
+&lt;/div></code></pre>
+				</td>
+				<td>
+					<div>
+						*bar*
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<pre><code>foo
 &lt;div>
 *bar*
-&lt;/div></code></pre> </td>
-<td> <p>foo</p>
+&lt;/div></code></pre>
+				</td>
+				<td>
+					<p>foo</p>
 
-<div>
-*bar*
-</div> </td>
-</tr>
-<tr>
-<td> <pre><code>&lt;div>
-*bar*
-
-&lt;/div></code></pre> </td>
-<td> <div>
-*bar*
-
-</div> </td>
-</tr>
-<tr>
-<td> <pre><code>&lt;div>
-
+					<div>
+						*bar*
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<pre><code>&lt;div>
 *bar*
 
-&lt;/div></code></pre> </td>
-<td> <div>
+&lt;/div></code></pre>
+				</td>
+				<td>
+					<div>
+						*bar*
 
-<p><em>bar</em></p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<pre><code>&lt;div>
 
-</div> </td>
-</tr>
-<tr>
-<td> <pre><code>&lt;del>*bar*&lt;/del></code></pre> </td>
-<td> <p><del><em>bar</em></del></p> </td>
-</tr>
-<tr>
-<td> <pre><code>&lt;del>
 *bar*
-&lt;/del></code></pre> </td>
-<td> <del>
+
+&lt;/div></code></pre>
+				</td>
+				<td>
+					<div>
+
+						<p><em>bar</em></p>
+
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<pre><code>&lt;del>*bar*&lt;/del></code></pre>
+				</td>
+				<td>
+					<p><del><em>bar</em></del></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<pre><code>&lt;del>
 *bar*
-</del> </td>
-</tr>
-<tr>
-<td> <pre><code>foo
+&lt;/del></code></pre>
+				</td>
+				<td> <del>
+						*bar*
+					</del> </td>
+			</tr>
+			<tr>
+				<td>
+					<pre><code>foo
 &lt;del>
 *bar*
-&lt;/del></code></pre> </td>
-<td> <p>foo
-<del>
-<em>bar</em>
-</del></p> </td>
-</tr>
-<tr>
-<td> <pre><code>&lt;del>
+&lt;/del></code></pre>
+				</td>
+				<td>
+					<p>foo
+						<del>
+							<em>bar</em>
+						</del>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<pre><code>&lt;del>
 *bar*
 
-&lt;/del></code></pre> </td>
-<td> <del>
+&lt;/del></code></pre>
+				</td>
+				<td> <del>
+						*bar*
+
+						<p>
+					</del></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<pre><code>&lt;del>
 *bar*
 
-<p></del></p> </td>
-</tr>
-<tr>
-<td> <pre><code>&lt;del>
+&lt;/del></code></pre>
+				</td>
+				<td> <del>
 
-*bar*
+						<p><em>bar</em></p>
 
-&lt;/del></code></pre> </td>
-<td> <del>
-
-<p><em>bar</em></p>
-
-<p></del></p> </td>
-</tr>
-</tbody>
-</table>
+						<p>
+					</del></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 
 </div>
 
@@ -789,20 +839,20 @@ about important terms used in your document <a href="#gnref:1" title="return to 
 
 <tbody>
 <tr>
-<td> <pre><code>Image - ![image](mmd.png)</code></pre> </td>
-<td> <p>Image - <img src="images/mmd.png" alt="image" height="50" width="100" /></p>
+<td> <pre><code>Image - ![image](Website.png)</code></pre> </td>
+<td> <p>Image - <img src="images/Website.png" alt="image" height="50" width="100" /></p>
  </td>
 </tr>
 <tr>
-<td> <pre><code>Image with title - ![image](mmd.png "This is a title")</code></pre> </td>
-<td> <p>Image with title - <img src="images/mmd.png" alt="image" title="This is a title" height="50" width="100" /></p>
+<td> <pre><code>Image with title - ![image](Website.png "This is a title")</code></pre> </td>
+<td> <p>Image with title - <img src="images/Website.png" alt="image" title="This is a title" height="50" width="100" /></p>
  </td>
 </tr>
 <tr>
 <td> <pre><code>Image with attributes - ![image].
 
-[image]: mmd.png "This is a title" height=25px width=50px</code></pre> </td>
-<td> <p>Image with attributes - <img src="images/mmd.png" alt="image" id="image" title="This is a title" height="25" width="50" />.</p>
+[image]: Website.png "This is a title" height=25px width=50px</code></pre> </td>
+<td> <p>Image with attributes - <img src="images/Website.png" alt="image" id="image" title="This is a title" height="25" width="50" />.</p>
  </td>
 </tr>
 <tr>
@@ -810,11 +860,11 @@ about important terms used in your document <a href="#gnref:1" title="return to 
 
 ![This is the caption][image]
 
-[image]: mmd.png "This is the title" height=45px width=120px</code></pre> </td>
+[image]: Website.png "This is the title" height=45px width=120px</code></pre> </td>
 <td> <p>Image by itself becomes a figure.</p>
 
 <figure>
-<img src="images/mmd.png" alt="This is the caption" id="image" title="This is the title" height="50" width="100" />
+<img src="images/Website.png" alt="This is the caption" id="image" title="This is the title" height="50" width="100" />
 <figcaption><i>This is the caption</i></figcaption>
 </figure>
  </td>
@@ -889,36 +939,36 @@ bar</p>
 
 <tbody>
 <tr>
-<td> <pre><code>Link to [MMD](http://fletcherpenney.net/mmd)</code></pre> </td>
-<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MMD</a></p> </td>
+<td> <pre><code>Link to [Website](http://serpensoft.info)</code></pre> </td>
+<td> <p>Link to <a href="http://serpensoft.info">Website</a></p> </td>
 </tr>
 <tr>
-<td> <pre><code>Link to [MultiMarkdown][MMD].
+<td> <pre><code>Link to [Website][Link].
 
-[MMD]: http://fletcherpenney.net/mmd</code></pre> </td>
-<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MultiMarkdown</a>.</p> </td>
+[Link]: http://serpensoft.info</code></pre> </td>
+<td> <p>Link to <a href="http://serpensoft.info">Website</a>.</p> </td>
 </tr>
 <tr>
-<td> <pre><code>Link to [MMD][].
+<td> <pre><code>Link to [Website][].
 
-[MMD]: http://fletcherpenney.net/mmd</code></pre> </td>
-<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MMD</a>.</p> </td>
+[Website]: http://serpensoft.info</code></pre> </td>
+<td> <p>Link to <a href="http://serpensoft.info">Website</a>.</p> </td>
 </tr>
 <tr>
-<td> <pre><code>Link to [MMD].
+<td> <pre><code>Link to [Website].
 
-[MMD]: http://fletcherpenney.net/mmd</code></pre> </td>
-<td> <p>Link to <a href="http://fletcherpenney.net/mmd">MMD</a>.</p> </td>
+[Website]: http://serpensoft.info</code></pre> </td>
+<td> <p>Link to <a href="http://serpensoft.info">Website</a>.</p> </td>
 </tr>
 <tr>
-<td> <pre><code>Link to [MMD].
+<td> <pre><code>Link to [Website].
 
-[MMD]: http://fletcherpenney.net/mmd style="border: solid black 1px;"</code></pre> </td>
-<td> <p>Link to <a href="http://fletcherpenney.net/mmd" style="border: solid black 1px;">MMD</a>.</p> </td>
+[Website]: http://serpensoft.info style="border: solid black 1px;"</code></pre> </td>
+<td> <p>Link to <a href="http://serpensoft.info" style="border: solid black 1px;">Website</a>.</p> </td>
 </tr>
 <tr>
-<td> <pre><code>Link to &lt;http://fletcherpenney.net/mmd></code></pre> </td>
-<td> <p>Link to <a href="http://fletcherpenney.net/mmd">http://fletcherpenney.net/mmd</a></p> </td>
+<td> <pre><code>Link to &lt;http://serpensoft.info></code></pre> </td>
+<td> <p>Link to <a href="http://serpensoft.info">http://serpensoft.info</a></p> </td>
 </tr>
 <tr>
 <td> <pre><code>&lt;foo@example.com></code></pre> </td>
