@@ -15,13 +15,11 @@ gem "github-pages", "~> 232", group: :jekyll_plugins
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 
 gem "minimal-mistakes-jekyll"
+gem 'activesupport', '~> 8.0', '>= 8.0.1'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-archives'
-  gem 'jekyll-remote-theme'
-  gem 'jekyll-include-cache'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
