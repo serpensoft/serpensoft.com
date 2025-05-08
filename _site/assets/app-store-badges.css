@@ -1,0 +1,23 @@
+.btn_as {
+    width: 200px;
+    height: 100px;
+    background: url(/assets/images/app-store-buttons/ios.svg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 200px 100px;
+    display: inline-block;
+    text-indent: -9999px;
+    margin: 0;
+}
+
+.btn_mas {
+    width: 250px;
+    height: 100px;
+    background: url(/assets/images/app-store-buttons/mac.svg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: 250px 100px;
+    display: inline-block;
+    text-indent: -9999px;
+    margin: 0;
+}
