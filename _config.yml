@@ -30,13 +30,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: serpensoft.com
 
 # Build settings
-#theme: minima
-#theme: wind-theme
 theme: minimal-mistakes-jekyll
 
 plugins:
   - jekyll-feed
   - jekyll-archives
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
 defaults:
   - scope:
