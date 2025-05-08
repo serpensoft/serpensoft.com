@@ -1,2 +1,2 @@
-# serpensoft.info
-Serpensoft.info website
+# serpensoft.com
+serpensoft.com website
