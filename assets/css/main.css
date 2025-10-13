@@ -1,7 +1,7 @@
 /* ========================================================================== Default skin ========================================================================== */
 /* Copyright comment */
 /*!
- * Minimal Mistakes Jekyll Theme 4.27.1 by Michael Rose
+ * Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
  * Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
  * Free for personal and commercial use under the MIT license
  * https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -444,21 +444,24 @@ tr, td, th { vertical-align: middle; }
 .btn--info { background-color: #3b9cba; color: #fff; }
 .btn--info:visited { background-color: #3b9cba; color: #fff; }
 .btn--info:hover { background-color: #2f7d95; color: #fff; }
+.btn--bluesky { background-color: #1083fe; color: #fff; }
+.btn--bluesky:visited { background-color: #1083fe; color: #fff; }
+.btn--bluesky:hover { background-color: #0d69cb; color: #fff; }
 .btn--facebook { background-color: #3b5998; color: #fff; }
 .btn--facebook:visited { background-color: #3b5998; color: #fff; }
 .btn--facebook:hover { background-color: #2f477a; color: #fff; }
-.btn--twitter { background-color: #55acee; color: #fff; }
-.btn--twitter:visited { background-color: #55acee; color: #fff; }
-.btn--twitter:hover { background-color: #448abe; color: #fff; }
 .btn--linkedin { background-color: #007bb6; color: #fff; }
 .btn--linkedin:visited { background-color: #007bb6; color: #fff; }
 .btn--linkedin:hover { background-color: #006292; color: #fff; }
 .btn--mastodon { background-color: #2b90d9; color: #fff; }
 .btn--mastodon:visited { background-color: #2b90d9; color: #fff; }
 .btn--mastodon:hover { background-color: #2273ae; color: #fff; }
-.btn--bluesky { background-color: #1083fe; color: #fff; }
-.btn--bluesky:visited { background-color: #1083fe; color: #fff; }
-.btn--bluesky:hover { background-color: #0d69cb; color: #fff; }
+.btn--twitter { background-color: #55acee; color: #fff; }
+.btn--twitter:visited { background-color: #55acee; color: #fff; }
+.btn--twitter:hover { background-color: #448abe; color: #fff; }
+.btn--x { background-color: #0f1419; color: #fff; }
+.btn--x:visited { background-color: #0f1419; color: #fff; }
+.btn--x:hover { background-color: #0c1014; color: #fff; }
 .btn--block { display: block; width: 100%; }
 .btn--block + .btn--block { margin-top: 0.25em; }
 .btn--disabled { pointer-events: none; cursor: not-allowed; filter: alpha(opacity=65); box-shadow: none; opacity: 0.65; }
@@ -808,7 +811,7 @@ div.highlighter-rouge > pre, div.highlighter-rouge pre.highlight, figure.highlig
 .transparent { opacity: 0; }
 
 /* https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html */
-.visually-hidden, .screen-reader-text, .screen-reader-text span, .screen-reader-shortcut { position: absolute !important; clip: rect(1px, 1px, 1px, 1px); height: 1px !important; width: 1px !important; border: 0 !important; overflow: hidden; }
+.visually-hidden, .screen-reader-text, .screen-reader-text span, .screen-reader-shortcut, .sr-only, .sr-only-focusable:not(:focus) { position: absolute !important; clip: rect(0, 0, 0, 0); height: 1px !important; width: 1px !important; padding: 0 !important; border: 0 !important; margin: -1px; overflow: hidden; white-space: nowrap; }
 
 body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .visually-hidden button { display: none !important; }
 
@@ -887,7 +890,8 @@ body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .vi
 .social-icons .fa-soundcloud { color: #ff3300; }
 .social-icons .fa-stack-exchange, .social-icons .fa-stack-overflow { color: #fe7a15; }
 .social-icons .fa-tumblr, .social-icons .fa-tumblr-square { color: #32506d; }
-.social-icons .fa-twitter, .social-icons .fa-twitter-square, .social-icons .fa-x-twitter { color: #55acee; }
+.social-icons .fa-twitter, .social-icons .fa-twitter-square { color: #55acee; }
+.social-icons .fa-x-twitter, .social-icons .fa-square-x-twitter { color: #0f1419; }
 .social-icons .fa-vimeo, .social-icons .fa-vimeo-square, .social-icons .fa-vimeo-v { color: #1ab7ea; }
 .social-icons .fa-vine { color: #00bf8f; }
 .social-icons .fa-xing, .social-icons .fa-xing-square { color: #006567; }
