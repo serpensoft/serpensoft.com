@@ -1,0 +1,705 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>MultiMarkdown Syntax Guide - serpensoft.com</title>
+<meta name="description" content="Apps for iPhone, iPad, and Mac">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="serpensoft.com">
+<meta property="og:title" content="MultiMarkdown Syntax Guide">
+<meta property="og:url" content="http://localhost:4000/mmd-syntax-guide/">
+
+
+  <meta property="og:description" content="Apps for iPhone, iPad, and Mac">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/mmd-syntax-guide/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  
+    <script src="/assets/script.js"></script>
+  
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          serpensoft.com
+          <span class="site-subtitle">Apps for iPhone, iPad, and Mac</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/iwriter-2/"
+                
+                
+              >iWriter 2</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/iwriter-pro/"
+                
+                
+              >iWriter Pro</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/games/"
+                
+                
+              >Games</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/picky/"
+                
+                
+              >Picky</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">MultiMarkdown Syntax Guide</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="MultiMarkdown Syntax Guide">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/mmd-syntax-guide/" itemprop="url">MultiMarkdown Syntax Guide
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#headings">Headings</a></li><li><a href="#text-styling">Text Styling</a></li><li><a href="#lists">Lists</a><ul><li><a href="#nested-lists">Nested Lists</a></li></ul></li><li><a href="#links">Links</a></li><li><a href="#images">Images</a></li><li><a href="#block-quotes">Block-quotes</a></li><li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li><li><a href="#code-blocks">Code Blocks</a></li><li><a href="#fenced-code-blocks">Fenced Code Blocks</a></li><li><a href="#footnotes">Footnotes</a></li><li><a href="#horizontal-rule">Horizontal rule</a></li><li><a href="#tables">Tables</a></li><li><a href="#html-blocks">HTML Blocks</a><ul><li><a href="#page-break">Page Break</a></li></ul></li><li><a href="#math-and-diagrams">Math and Diagrams</a></li><li><a href="#table-of-contents">Table of contents</a></li><li><a href="#insert-other-documents-transclusion">Insert other documents (transclusion)</a></li><li><a href="#citations">Citations</a></li><li><a href="#cross-references">Cross-references</a></li><li><a href="#definition-lists">Definition Lists</a></li><li><a href="#abbreviations">Abbreviations</a></li><li><a href="#glossary">Glossary</a></li><li><a href="#subscript--superscript">Subscript &amp; Superscript</a></li><li><a href="#escaped-characters">Escaped characters</a></li><li><a href="#document-metadata">Document Metadata</a></li></ul>
+            </nav>
+          </aside>
+        
+        <h2 id="headings">Headings</h2>
+
+<p>To create a heading, add one to six <code class="language-plaintext highlighter-rouge">#</code> symbols before your heading text. The number of <code class="language-plaintext highlighter-rouge">#</code> you use will determine the 
+hierarchy level and typeface size of the heading.</p>
+
+<p>ATX-Style Headings</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is a heading H1
+## This is a heading H2
+### This is a heading H3
+#### This is a heading H4
+##### This is a heading H5
+###### This is a heading H6
+
+# Heading with custom id [custom-id]
+</code></pre></div></div>
+
+<p>Setext Headings are also supported:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A First Level Header
+=========
+
+A Second Level Header
+---------
+</code></pre></div></div>
+
+<h2 id="text-styling">Text Styling</h2>
+
+<p><strong>Strong style</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This text is **bold**.
+This text is also __bold__.
+</code></pre></div></div>
+
+<p><em>Emphasis style</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This text is *italicized*.
+This text is also _italicized_.
+</code></pre></div></div>
+
+<p><strong><em>Oblique style</em></strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This text is ***oblique***.
+This text is also ___oblique___.
+</code></pre></div></div>
+
+<p><del>Strikethrough style</del></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>And this is the ~~strikethrough~~ style.
+</code></pre></div></div>
+
+<h2 id="lists">Lists</h2>
+
+<p>You can make an unordered list by preceding one or more lines of text with <code class="language-plaintext highlighter-rouge">-</code>, <code class="language-plaintext highlighter-rouge">*</code>, or <code class="language-plaintext highlighter-rouge">+</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Bulleted list item
++ Bulleted list item
+- Bulleted list item
+</code></pre></div></div>
+
+<p>To order your list, precede each line with a number.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Numbered list item
+2. Numbered list item
+3. Numbered list item
+</code></pre></div></div>
+
+<p>To create a task list, preface list items with a hyphen and space followed by <code class="language-plaintext highlighter-rouge">[ ]</code>. To mark a task as complete, use <code class="language-plaintext highlighter-rouge">[x]</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [ ] Task list item
+- [ ] Task list item
+- [x] Task list item
+</code></pre></div></div>
+
+<h3 id="nested-lists">Nested Lists</h3>
+
+<p>You can create a nested list by indenting one or more list items below another item.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. First list item
+   - First nested list item
+     - Second nested list item
+</code></pre></div></div>
+
+<h2 id="links">Links</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Link Title](/url/to/destination)
+[iwriter](https://serpensoft.com/iwriter-2/)
+</code></pre></div></div>
+
+<p>If your URL contains blank spaces, you must escape them by replacing them with <code class="language-plaintext highlighter-rouge">%20</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Optional Link Title](/url%20with%20spaces)
+</code></pre></div></div>
+
+<p>Inline links:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;foo@example.com&gt;
+Link to &lt;http://serpensoft.com&gt;
+</code></pre></div></div>
+
+<p>Reference-style link:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Link to [Website][Link].
+...
+[Link]: http://serpensoft.com
+</code></pre></div></div>
+
+<p>Reference link with styling:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Link to [Website].
+...
+[Website]: http://serpensoft.com style="border: solid black 1px;"
+</code></pre></div></div>
+
+<h2 id="images">Images</h2>
+
+<p>You can display an image by adding <code class="language-plaintext highlighter-rouge">!</code> and wrapping the alt text in <code class="language-plaintext highlighter-rouge">[ ]</code>. Alt text is a short text equivalent of the information in the image. Then, wrap the link for the image in parentheses <code class="language-plaintext highlighter-rouge">()</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Optional Caption](/link/to/image "Optional title")
+</code></pre></div></div>
+
+<p>Inline image:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![image](Website.png "This is a title")
+</code></pre></div></div>
+
+<p>Image with attributes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![image]
+...
+[image]: Website.png "This is a title" height=25px width=50px
+</code></pre></div></div>
+
+<p>Image by itself becomes a figure:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![This is the caption][image]
+
+[image]: Website.png "This is the title" height=45px width=120px
+</code></pre></div></div>
+
+<h2 id="block-quotes">Block-quotes</h2>
+
+<p>You can quote text with a <code class="language-plaintext highlighter-rouge">&gt;</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Regular text.
+
+&gt; Blockquote
+&gt; with two lines.
+And one more line.
+&gt;&gt; And a second level blockquote.
+</code></pre></div></div>
+
+<h2 id="paragraphs-and-line-breaks">Paragraphs and Line Breaks</h2>
+
+<p>To create a line break in a Markdown file, you will need to include one of the following:</p>
+
+<p>Include two spaces at the end of the first line.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example  
+Will span two lines.
+</code></pre></div></div>
+
+<p>Include a backslash at the end of the first line.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example\
+Will span two lines.
+</code></pre></div></div>
+
+<p>Include an HTML single line break tag at the end of the first line.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example&lt;br/&gt;
+Will span two lines.
+</code></pre></div></div>
+
+<p>Or, leave a blank line between two lines.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example
+ 
+Will span two lines.
+</code></pre></div></div>
+
+<h2 id="code-blocks">Code Blocks</h2>
+
+<p><code class="language-plaintext highlighter-rouge">This is an inline code block.</code></p>
+
+<p>Indent text with tabs or 4+ space characters to create a multiline code block:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a longer
+section of code
+on multiple lines.
+</code></pre></div></div>
+
+<h2 id="fenced-code-blocks">Fenced Code Blocks</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
+This is a fenced
+code block.
+```
+</code></pre></div></div>
+
+<p>Fenced code block with a language marker:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```perl
+  print "Hello, world!\n";
+  $a = 0;
+  while ($a &lt; 10) {
+    print "$a...\n";
+    $a++;
+  }
+```
+</code></pre></div></div>
+
+<h2 id="footnotes">Footnotes</h2>
+
+<p>Reference style:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Text[^foot].
+
+[^foot]: This is a footnote.
+</code></pre></div></div>
+
+<p>Inline:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Text[^This is an inline footnote.].
+</code></pre></div></div>
+
+<h2 id="horizontal-rule">Horizontal rule</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-----
+
+- - - - -
+
+*****
+
+* * * * *
+</code></pre></div></div>
+
+<h2 id="tables">Tables</h2>
+
+<p>Simple table:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| foo | bar |
+| --- | --- |
+| foo | bar |
+| foo bar  ||
+[*caption*][id]
+</code></pre></div></div>
+
+<p>Table with aligned columns:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| right aligned | centered | left aligned |
+| ---: | :---: | :--- |
+| foo | bar | bat |
+| foo | bar | bat |
+[*caption*][id]
+</code></pre></div></div>
+
+<h2 id="html-blocks">HTML Blocks</h2>
+
+<p>The app supports plain HTML blocks.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;This is HTML paragraph.&lt;/p&gt;
+
+&lt;mark&gt;This text is highlighted.&lt;/mark&gt;
+</code></pre></div></div>
+
+<p>You can also modify the underlying styling using CSS:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;style&gt;
+p { color: yellow; }
+&lt;/style&gt;
+</code></pre></div></div>
+
+<p>Please note: blank lines within tags are not supported.</p>
+
+<h3 id="page-break">Page Break</h3>
+
+<p>Use this code snippet to insert a page break:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div style='break-after:page'&gt;&lt;/div&gt;
+</code></pre></div></div>
+
+<h2 id="math-and-diagrams">Math and Diagrams</h2>
+
+<p>You can add math expressions to your notes using <code class="language-plaintext highlighter-rouge">MathJax</code> and the $LaTeX$ notation.</p>
+
+<p>Inline math:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$e^{2i\pi} = 1$
+</code></pre></div></div>
+
+<p>Math block:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
+\begin{vmatrix}a &amp; b\\
+c &amp; d
+\end{vmatrix}=ad-bc
+$$
+</code></pre></div></div>
+
+<p>You can add diagrams and charts to your notes, using <code class="language-plaintext highlighter-rouge">Mermaid</code>. <code class="language-plaintext highlighter-rouge">Mermaid</code> supports a range of diagrams, such as flow charts, sequence diagrams, and timelines.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
+sequenceDiagram
+    Alice-&gt;&gt;+John: Hello John, how are you?
+    Alice-&gt;&gt;+John: John, can you hear me?
+    John--&gt;&gt;-Alice: Hi Alice, I can hear you!
+    John--&gt;&gt;-Alice: I feel great!
+```
+</code></pre></div></div>
+
+<h2 id="table-of-contents">Table of contents</h2>
+
+<p>Use this shortcut to generate the document’s table of contents:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{TOC}}
+</code></pre></div></div>
+
+<p>The table of contents will be automatically generated from the available headings.</p>
+
+<h2 id="insert-other-documents-transclusion">Insert other documents (transclusion)</h2>
+
+<p>Use the following syntax to attach the content of external document:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{filename.md}} 
+
+{{folder/filename.md}}
+
+{{folder/filename with spaces.md}}
+</code></pre></div></div>
+
+<h2 id="citations">Citations</h2>
+
+<p>Reference style:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cite a source.[p. 42][#source]
+
+[#source]: John Doe. *A Totally Fake Book*. Vanity Press, 2006.
+</code></pre></div></div>
+
+<p>Inline:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cite a source.[p. 42][#John Doe. *A Totally Fake Book*. Vanity Press, 2006.]
+</code></pre></div></div>
+
+<h2 id="cross-references">Cross-references</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Intro #
+
+# Conclusion [fin] #
+
+Link to [Intro].
+
+Link to the [end][fin].
+</code></pre></div></div>
+
+<h2 id="definition-lists">Definition Lists</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Apple
+:   Pomaceous fruit of plants of the genus Malus 
+in the family Rosaceae.
+
+Also the makers of really great products.
+</code></pre></div></div>
+
+<h2 id="abbreviations">Abbreviations</h2>
+
+<p>Reference style:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTML and HTML
+
+[&gt;HTML]: Hypertext Markup Language
+</code></pre></div></div>
+
+<p>Inline:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[&gt;(HTML) Hypertext Markup Language] and HTML
+</code></pre></div></div>
+
+<h2 id="glossary">Glossary</h2>
+
+<p>Reference style:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[?Glossary] is a glossary term.
+
+[?Glossary]: The glossary collects information about
+important terms used in your document.
+</code></pre></div></div>
+
+<p>Inline:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[?(Glossary) The glossary collects information about important terms used in your document] is a glossary term.
+</code></pre></div></div>
+
+<h2 id="subscript--superscript">Subscript &amp; Superscript</h2>
+
+<p>m<sup>2</sup></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> m^2
+</code></pre></div></div>
+
+<p>x<sup>2</sup>y<sup>3</sup></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x^2 y^3
+</code></pre></div></div>
+
+<p>x<sub>z</sub></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x~z
+</code></pre></div></div>
+
+<p>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C~6~H~12~O~6~
+</code></pre></div></div>
+
+<h2 id="escaped-characters">Escaped characters</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\&amp; \$ \* \_
+</code></pre></div></div>
+
+<h2 id="document-metadata">Document Metadata</h2>
+
+<p>Metadata fields should be added at the top of the document.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Title:  This is a title
+Author: John Appleseed
+E-Mail: email@server.com
+Date:   2025-10-20
+</code></pre></div></div>
+
+<p>Metadata will be applied during the export process.</p>
+
+<h1 id="acknowledgements">Acknowledgements</h1>
+
+<p><a href="https://rawgit.com/fletcher/MultiMarkdown-6-Syntax-Guide/master/index.html">MultiMarkdown Syntax Guide</a> by Fletcher T. Penney.</p>
+
+<p><a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github">Quickstart for writing on GitHub</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">serpensoft.com</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
