@@ -15,7 +15,7 @@
 <meta charset="utf-8">
 
 
-<!-- begin _includes/seo.html --><title>MultiMarkdown Syntax Guide - serpensoft.com</title>
+<!-- begin _includes/seo.html --><title>MultiMarkdown Syntax Guide (Legacy) - serpensoft.com</title>
 <meta name="description" content="Apps for iPhone, iPad, and Mac">
 
 
@@ -23,8 +23,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="serpensoft.com">
-<meta property="og:title" content="MultiMarkdown Syntax Guide">
-<meta property="og:url" content="http://localhost:4000/mmd-syntax-guide/">
+<meta property="og:title" content="MultiMarkdown Syntax Guide (Legacy)">
+<meta property="og:url" content="http://localhost:4000/mmd-syntax-guide-legacy/">
 
 
   <meta property="og:description" content="Apps for iPhone, iPad, and Mac">
@@ -42,7 +42,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/mmd-syntax-guide/">
+<link rel="canonical" href="http://localhost:4000/mmd-syntax-guide-legacy/">
 
 
 
@@ -179,7 +179,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">MultiMarkdown Syntax Guide</li>
+        <li class="current">MultiMarkdown Syntax Guide (Legacy)</li>
       
     
   </ol>
@@ -194,7 +194,7 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="MultiMarkdown Syntax Guide">
+    <meta itemprop="headline" content="MultiMarkdown Syntax Guide (Legacy)">
     
     
     
@@ -203,7 +203,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/mmd-syntax-guide/" itemprop="url">MultiMarkdown Syntax Guide
+            <a href="http://localhost:4000/mmd-syntax-guide-legacy/" itemprop="url">MultiMarkdown Syntax Guide (Legacy)
 </a>
           </h1>
           
@@ -218,11 +218,14 @@
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#headings">Headings</a></li><li><a href="#text-styling">Text Styling</a></li><li><a href="#lists">Lists</a><ul><li><a href="#nested-lists">Nested Lists</a></li></ul></li><li><a href="#links">Links</a></li><li><a href="#images">Images</a></li><li><a href="#block-quotes">Block-quotes</a></li><li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li><li><a href="#page-break">Page Break</a></li><li><a href="#code-blocks">Code Blocks</a></li><li><a href="#fenced-code-blocks">Fenced Code Blocks</a></li><li><a href="#footnotes">Footnotes</a></li><li><a href="#horizontal-rule">Horizontal rule</a></li><li><a href="#tables">Tables</a></li><li><a href="#html-blocks">HTML Blocks</a></li><li><a href="#math-and-diagrams">Math and Diagrams</a></li><li><a href="#table-of-contents">Table of contents</a></li><li><a href="#insert-other-documents-transclusion">Insert other documents (transclusion)</a></li><li><a href="#citations">Citations</a></li><li><a href="#cross-references">Cross-references</a></li><li><a href="#definition-lists">Definition Lists</a></li><li><a href="#abbreviations">Abbreviations</a></li><li><a href="#glossary">Glossary</a></li><li><a href="#subscript--superscript">Subscript &amp; Superscript</a></li><li><a href="#escaped-characters">Escaped characters</a></li><li><a href="#document-metadata">Document Metadata</a></li></ul>
+              <ul class="toc__menu"><li><a href="#headings">Headings</a></li><li><a href="#text-styling">Text Styling</a></li><li><a href="#lists">Lists</a><ul><li><a href="#nested-lists">Nested Lists</a></li></ul></li><li><a href="#links">Links</a></li><li><a href="#images">Images</a></li><li><a href="#block-quotes">Block-quotes</a></li><li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li><li><a href="#code-blocks">Code Blocks</a></li><li><a href="#fenced-code-blocks">Fenced Code Blocks</a></li><li><a href="#footnotes">Footnotes</a></li><li><a href="#horizontal-rule">Horizontal rule</a></li><li><a href="#tables">Tables</a></li><li><a href="#html-blocks">HTML Blocks</a><ul><li><a href="#page-break">Page Break</a></li></ul></li><li><a href="#math-and-diagrams">Math and Diagrams</a></li><li><a href="#table-of-contents">Table of contents</a></li><li><a href="#insert-other-documents-transclusion">Insert other documents (transclusion)</a></li><li><a href="#citations">Citations</a></li><li><a href="#cross-references">Cross-references</a></li><li><a href="#definition-lists">Definition Lists</a></li><li><a href="#abbreviations">Abbreviations</a></li><li><a href="#glossary">Glossary</a></li><li><a href="#subscript--superscript">Subscript &amp; Superscript</a></li><li><a href="#escaped-characters">Escaped characters</a></li><li><a href="#document-metadata">Document Metadata</a></li></ul>
             </nav>
           </aside>
         
-        <h2 id="headings">Headings</h2>
+        <p class="notice--info">This is the legacy version of MMD Guide.
+If you are looking for iWriter 2 version, please go <a href="/mmd-syntax-guide/">here</a></p>
+
+<h2 id="headings">Headings</h2>
 
 <p>To create a heading, add one to six <code class="language-plaintext highlighter-rouge">#</code> symbols before your heading text. The number of <code class="language-plaintext highlighter-rouge">#</code> you use will determine the 
 hierarchy level and typeface size of the heading.</p>
@@ -237,6 +240,15 @@ hierarchy level and typeface size of the heading.</p>
 ###### This is a heading H6
 
 # Heading with custom id [custom-id]
+</code></pre></div></div>
+
+<p>Setext Headings are also supported:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A First Level Header
+=========
+
+A Second Level Header
+---------
 </code></pre></div></div>
 
 <h2 id="text-styling">Text Styling</h2>
@@ -262,12 +274,6 @@ This text is also ___oblique___.
 <p><del>Strikethrough style</del></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>And this is the ~~strikethrough~~ style.
-</code></pre></div></div>
-
-<p>==Highlight style==</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This text is ==highlighted==.
-This text is also ::highlighted::.
 </code></pre></div></div>
 
 <h2 id="lists">Lists</h2>
@@ -400,19 +406,9 @@ Will span two lines.
 Will span two lines.
 </code></pre></div></div>
 
-<h2 id="page-break">Page Break</h2>
-
-<p>Use 5 or more plus <code class="language-plaintext highlighter-rouge">+</code> symbols to add a page break.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+++++
-</code></pre></div></div>
-
 <h2 id="code-blocks">Code Blocks</h2>
 
-<p>Use a grave accent (backtick) symbol to add an inline code block.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>`This is an inline code block.`
-</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">This is an inline code block.</code></p>
 
 <p>Indent text with tabs or 4+ space characters to create a multiline code block:</p>
 
@@ -457,30 +453,13 @@ code block.
 
 <h2 id="horizontal-rule">Horizontal rule</h2>
 
-<p><strong>iWriter 2</strong> supports several styles of delimiters:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-----
 
-<p><em>Thin line</em> <code class="language-plaintext highlighter-rouge">---</code></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>----
+- - - - -
 
 *****
-</code></pre></div></div>
-
-<p><em>Dashed line</em> <code class="language-plaintext highlighter-rouge">- - -</code></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- - - - -
 
 * * * * *
-</code></pre></div></div>
-
-<p><em>Double line</em> <code class="language-plaintext highlighter-rouge">===</code></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=====
-</code></pre></div></div>
-
-<p><em>Wavy line</em> <code class="language-plaintext highlighter-rouge">~~~</code></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~~~
 </code></pre></div></div>
 
 <h2 id="tables">Tables</h2>
@@ -520,6 +499,13 @@ p { color: yellow; }
 </code></pre></div></div>
 
 <p>Please note: blank lines within tags are not supported.</p>
+
+<h3 id="page-break">Page Break</h3>
+
+<p>Use this code snippet to insert a page break:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div style='break-after:page'&gt;&lt;/div&gt;
+</code></pre></div></div>
 
 <h2 id="math-and-diagrams">Math and Diagrams</h2>
 
