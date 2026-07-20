@@ -218,7 +218,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#headings">Headings</a></li><li><a href="#text-styling">Text Styling</a></li><li><a href="#lists">Lists</a><ul><li><a href="#nested-lists">Nested Lists</a></li></ul></li><li><a href="#links">Links</a></li><li><a href="#images">Images</a></li><li><a href="#block-quotes">Block-quotes</a></li><li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li><li><a href="#page-break">Page Break</a></li><li><a href="#code-blocks">Code Blocks</a></li><li><a href="#fenced-code-blocks">Fenced Code Blocks</a></li><li><a href="#footnotes">Footnotes</a></li><li><a href="#horizontal-rule">Horizontal rule</a></li><li><a href="#tables">Tables</a></li><li><a href="#html-blocks">HTML Blocks</a></li><li><a href="#math-and-diagrams">Math and Diagrams</a></li><li><a href="#table-of-contents">Table of contents</a></li><li><a href="#insert-other-documents-transclusion">Insert other documents (transclusion)</a></li><li><a href="#citations">Citations</a></li><li><a href="#cross-references">Cross-references</a></li><li><a href="#definition-lists">Definition Lists</a></li><li><a href="#abbreviations">Abbreviations</a></li><li><a href="#glossary">Glossary</a></li><li><a href="#subscript--superscript">Subscript &amp; Superscript</a></li><li><a href="#escaped-characters">Escaped characters</a></li><li><a href="#document-metadata">Document Metadata</a></li></ul>
+              <ul class="toc__menu"><li><a href="#headings">Headings</a></li><li><a href="#text-styling">Text Styling</a></li><li><a href="#lists">Lists</a><ul><li><a href="#nested-lists">Nested Lists</a></li></ul></li><li><a href="#links">Links</a></li><li><a href="#wikilinks">Wikilinks</a></li><li><a href="#images">Images</a><ul><li><a href="#wikilink-embeds">Wikilink Embeds</a></li></ul></li><li><a href="#blockquotes">Blockquotes</a></li><li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li><li><a href="#page-break">Page Break</a></li><li><a href="#code-blocks">Code Blocks</a></li><li><a href="#fenced-code-blocks">Fenced Code Blocks</a></li><li><a href="#footnotes">Footnotes</a></li><li><a href="#horizontal-rule">Horizontal rule</a></li><li><a href="#tables">Tables</a></li><li><a href="#html-blocks">HTML Blocks</a></li><li><a href="#math-and-diagrams">Math and Diagrams</a></li><li><a href="#table-of-contents">Table of contents</a></li><li><a href="#insert-other-documents">Insert other documents</a><ul><li><a href="#multimarkdown-style-transclude">MultiMarkdown Style (Transclude)</a></li><li><a href="#wikilink-embeds-1">Wikilink Embeds</a></li></ul></li><li><a href="#citations">Citations</a></li><li><a href="#cross-references">Cross-references</a></li><li><a href="#definition-lists">Definition Lists</a></li><li><a href="#abbreviations">Abbreviations</a></li><li><a href="#glossary">Glossary</a></li><li><a href="#subscript--superscript">Subscript &amp; Superscript</a></li><li><a href="#escaped-characters">Escaped characters</a></li><li><a href="#document-metadata">Document Metadata</a></li><li><a href="#acknowledgements">Acknowledgements</a></li></ul>
             </nav>
           </aside>
         
@@ -227,7 +227,7 @@
 <p>To create a heading, add one to six <code class="language-plaintext highlighter-rouge">#</code> symbols before your heading text. The number of <code class="language-plaintext highlighter-rouge">#</code> you use will determine the 
 hierarchy level and typeface size of the heading.</p>
 
-<p>ATX-Style Headings</p>
+<p><strong>ATX-Style Headings</strong></p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is a heading H1
 ## This is a heading H2
@@ -304,6 +304,8 @@ This text is also ::highlighted::.
 
 <h2 id="links">Links</h2>
 
+<p>You can create an inline link by wrapping link text in brackets <code class="language-plaintext highlighter-rouge">[ ]</code>, and then wrapping the URL in parentheses <code class="language-plaintext highlighter-rouge">( )</code>.</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Link Title](/url/to/destination)
 [iwriter](https://serpensoft.com/iwriter-2/)
 </code></pre></div></div>
@@ -333,6 +335,27 @@ Link to &lt;http://serpensoft.com&gt;
 [Website]: http://serpensoft.com style="border: solid black 1px;"
 </code></pre></div></div>
 
+<h2 id="wikilinks">Wikilinks</h2>
+
+<p><strong>iWriter 2</strong> supports the following wikilink format:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[link_path]] 
+
+[[path_to_document.md]]
+</code></pre></div></div>
+
+<p>To link to a note in a folder, include the folder path before the note name. Folder paths start at the vault root and use forward slashes <code class="language-plaintext highlighter-rouge">/</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[folder/link_path]] 
+
+[[folder/path_to_document.md]]
+</code></pre></div></div>
+
+<p>Use a vertical bar <code class="language-plaintext highlighter-rouge">|</code> to change the title text:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[Example|Custom name]]
+</code></pre></div></div>
+
 <h2 id="images">Images</h2>
 
 <p>You can display an image by adding <code class="language-plaintext highlighter-rouge">!</code> and wrapping the alt text in <code class="language-plaintext highlighter-rouge">[ ]</code>. Alt text is a short text equivalent of the information in the image. Then, wrap the link for the image in parentheses <code class="language-plaintext highlighter-rouge">()</code>.</p>
@@ -359,7 +382,24 @@ Link to &lt;http://serpensoft.com&gt;
 [image]: Website.png "This is the title" height=45px width=120px
 </code></pre></div></div>
 
-<h2 id="block-quotes">Block-quotes</h2>
+<h3 id="wikilink-embeds">Wikilink Embeds</h3>
+
+<p>To embed an image:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![[Image.jpeg]]
+</code></pre></div></div>
+
+<p>You can change the image dimensions by adding <code class="language-plaintext highlighter-rouge">|200x100</code> to the link, where <code class="language-plaintext highlighter-rouge">200</code> is the <em>width</em> and <code class="language-plaintext highlighter-rouge">100</code> is the <em>height</em>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![[Image.jpeg|200x100]]
+</code></pre></div></div>
+
+<p>If you only specify the <em>width</em>, the image scales proportionally:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![[Image.jpeg|200]]
+</code></pre></div></div>
+
+<h2 id="blockquotes">Blockquotes</h2>
 
 <p>You can quote text with a <code class="language-plaintext highlighter-rouge">&gt;</code>.</p>
 
@@ -519,7 +559,7 @@ p { color: yellow; }
 &lt;/style&gt;
 </code></pre></div></div>
 
-<p>Please note: blank lines within tags are not supported.</p>
+<p class="notice">Blank lines within HTML tags are not supported.</p>
 
 <h2 id="math-and-diagrams">Math and Diagrams</h2>
 
@@ -559,7 +599,9 @@ sequenceDiagram
 
 <p>The table of contents will be automatically generated from the available headings.</p>
 
-<h2 id="insert-other-documents-transclusion">Insert other documents (transclusion)</h2>
+<h2 id="insert-other-documents">Insert other documents</h2>
+
+<h3 id="multimarkdown-style-transclude">MultiMarkdown Style (Transclude)</h3>
 
 <p>Use the following syntax to attach the content of external document:</p>
 
@@ -569,6 +611,30 @@ sequenceDiagram
 
 {{folder/filename with spaces.md}}
 </code></pre></div></div>
+
+<p class="notice">You can embed plain text files only.</p>
+
+<h3 id="wikilink-embeds-1">Wikilink Embeds</h3>
+
+<p>Use the following syntax to attach the content of external document:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![[filename.md]]
+
+![[folder/filename.md]]
+
+![[folder/filename with spaces.md]]
+</code></pre></div></div>
+
+<p>You can omit the file extension for <code class="language-plaintext highlighter-rouge">.md</code> documents:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![[filename]]
+
+![[folder/filename]]
+
+![[folder/filename with spaces]]
+</code></pre></div></div>
+
+<p class="notice">You can embed plain text files only.</p>
 
 <h2 id="citations">Citations</h2>
 
@@ -672,11 +738,13 @@ Date:   2025-10-20
 
 <p>Metadata will be applied during the export process.</p>
 
-<h1 id="acknowledgements">Acknowledgements</h1>
+<h2 id="acknowledgements">Acknowledgements</h2>
 
 <p><a href="https://rawgit.com/fletcher/MultiMarkdown-6-Syntax-Guide/master/index.html">MultiMarkdown Syntax Guide</a> by Fletcher T. Penney.</p>
 
 <p><a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github">Quickstart for writing on GitHub</a></p>
+
+<p><a href="https://obsidian.md/help/syntax">Obsidian Help</a></p>
 
         
       </section>
