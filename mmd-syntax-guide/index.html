@@ -1,830 +1,2169 @@
-
-
 <!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
-  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
-  Copyright 2024-2026 iBug - ibugone.com | @iBug
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="en">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
 
-<html lang="en" class="no-js">
-  <head>
+  
+  
+    <title>MultiMarkdown Syntax Guide &middot; serpensoft</title>
+    <meta name="title" content="MultiMarkdown Syntax Guide &middot; serpensoft">
+  
+
+  
+  
+  
+  
+  
     
-<meta charset="utf-8">
-
-
-<!-- begin _includes/seo.html --><title>MultiMarkdown Syntax Guide - serpensoft.com</title>
-<meta name="description" content="Apps for iPhone, iPad, and Mac">
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="serpensoft.com">
-<meta property="og:title" content="MultiMarkdown Syntax Guide">
-<meta property="og:url" content="http://localhost:4000/mmd-syntax-guide/">
-
-
-  <meta property="og:description" content="Apps for iPhone, iPad, and Mac">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="canonical" href="http://localhost:4000/mmd-syntax-guide/">
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- end _includes/seo.html -->
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-  window.enable_copy_code_button = true;
-</script>
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
-
-
   
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  
-    <script src="/assets/script.js"></script>
-  
-
-
-    <!-- start custom head snippets -->
-
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
-
-<!-- end custom head snippets -->
-
-  </head>
-
-  <body class="layout--single" dir="ltr">
     
-<nav class="skip-links" aria-label="Skip links">
-  <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
-    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
-    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
-  </ul>
+  
+    
+  
+  
+    <meta name="description" content="Everything you can type in iWriter 2: Markdown and MultiMarkdown syntax with examples and previews.">
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/mmd-syntax-guide/">
+  
+  
+  
+
+  
+  
+    <meta name="author" content="serpensoft">
+  
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/mmd-syntax-guide/">
+	<meta property="og:site_name" content="serpensoft">
+	<meta property="og:title" content="MultiMarkdown Syntax Guide">
+	<meta property="og:description" content="Everything you can type in iWriter 2: Markdown and MultiMarkdown syntax with examples and previews.">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+
+  
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="MultiMarkdown Syntax Guide">
+	<meta name="twitter:description" content="Everything you can type in iWriter 2: Markdown and MultiMarkdown syntax with examples and previews.">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.c609944b90203779e1caa5e77796492e8b9b63a93c06ec13e8842d9ba1fab7cce93b6edba224a46636f421e4af0c4888791acb902fb1c646c3003af564f6352c.css"
+    integrity="sha512-xgmUS5AgN3nhyqXnd5ZJLoubY6k8BuwT6IQtm6H6t8zpO27boiSkZjb0IeSvDEiIeRrLkC&#43;xxkbDADr1ZPY1LA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.764f412f07ea715415e9123a5eb5f355429502d0b760146b9bcab854bc50829dee14488594acd935dfcdc6a0fe7e6d14d7bee914ebb9272b251aa238cb52c4dd.js"
+    integrity="sha512-dk9BLwfqcVQV6RI6XrXzVUKVAtC3YBRrm8q4VLxQgp3uFEiFlKzZNd/NxqD&#43;fm0U177pFOu5JyslGqI4y1LE3Q=="></script>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+    
+    
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.17b3d3bbe00602f12ed247330588c186dd330147642a44a8aca5159f5905a7a6e0a70abb06315b581aef2c4f6d0e4d4bac82dbc1b0916818b057f9ad42c4aae6.js"
+      integrity="sha512-F7PTu&#43;AGAvEu0kczBYjBht0zAUdkKkSorKUVn1kFp6bgpwq7BjFbWBrvLE9tDk1LrILbwbCRaBiwV/mtQsSq5g=="
+      data-copy="Copy"
+      data-copied="Copied"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Apps for iPhone, iPad, and Mac",
+    "name": "MultiMarkdown Syntax Guide",
+    "headline": "MultiMarkdown Syntax Guide",
+    "description": "Everything you can type in iWriter 2: Markdown and MultiMarkdown syntax with examples and previews.",
+    "inLanguage": "en",
+    "url" : "http://localhost:1313/mmd-syntax-guide/",
+    "author" : {
+      "@type": "Person",
+      "name": "serpensoft"
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    "mainEntityOfPage": "http://localhost:1313/mmd-syntax-guide/",
+    "wordCount":  571 
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+    
+<script>try{localStorage.removeItem("appearance")}catch(e){}document.documentElement.classList.add("dark")</script>
+<link rel="stylesheet" href="/css/page-0e8960d0f846f9c2b6cd708b29ea6979.min.ba6f60aeff0f1f8c834e492272bee418544af8f405550b181b46d3685a8359bfdb21663ac6fb025b8c6e55ddc54e3397ae3a81aab3f5cf8e7f9ed5febd822579.css" integrity="sha512-um9grv8PH4yDTkkicr7kGFRK&#43;PQFVQsYG0bTaFqDWb/bIWY6xvsCW4xuVd3FTjOXrjqBqrP1z45/ntX&#43;vYIleQ==">
+<script defer src="/js/page-91139e4ad65514d12ca21e0675a3b1e3.min.ba97fdfbc067043da289a80977654b649a64cd5dc88f07b228d1bbc07c5f0f7a268b28f7d7a030e6252172d72bb6535a6b8f9b21553d338664ff0202f4c3a8e4.js" integrity="sha512-upf9&#43;8BnBD2iiagJd2VLZJpkzV3IjweyKNG7wHxfD3omiyj316Aw5iUhctcrtlNaa4&#43;bIVU9M4Zk/wIC9MOo5A=="></script>
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Skip to main content
+      </a>
+    </div>
+    <header>
+      
+      
+        <div class="min-h-[148px]"></div>
+<div class="fixed top-0 inset-x-0 z-100">
+  <div
+    id="menu-blur"
+    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl backdrop-saturate-220 backdrop-brightness-112 dark:backdrop-saturate-180 dark:backdrop-brightness-95 bg-primary-200/80 bg-linear-60 dark:bg-primary-800/30 shadow-xl"></div>
+  <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
+    <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav aria-label="Main menu" class="flex items-center gap-x-5 h-12">
+  
+    
+      
+  
+    <a
+      href="/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="Home"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          Home
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/iwriter-2/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="iWriter 2"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          iWriter 2
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/iwriter-pro/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="iWriter Pro"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          iWriter Pro
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/picky/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="Picky"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          Picky
+        </span>
+      
+    </a>
+  
+
+    
+  
+
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search (/ or ⌘K)"
+      class="flex items-center gap-2 rounded-lg border bf-border-color bf-border-color-hover bg-neutral-100/50 px-2 py-1 text-sm text-neutral-500 transition-colors hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral-400 dark:hover:text-primary-400"
+      title="Search (/ or ⌘K)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      <kbd
+        id="search-shortcut-hint"
+        class="pointer-events-none font-sans text-xs text-neutral-500 dark:text-neutral-400"
+        aria-hidden="true">
+        ⌘K
+      </kbd>
+    </button>
+  
 </nav>
 
+
+
+    </div>
+    <div class="flex md:hidden">
+      
+<div class="mobile-header-row relative flex items-center h-14 gap-4">
+  
+
+  
+
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search (/ or ⌘K)"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="Search (/ or ⌘K)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <input type="checkbox" id="mobile-menu-toggle" autocomplete="off" class="hidden peer">
+    <label
+      for="mobile-menu-toggle"
+      tabindex="0"
+      role="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu-dialog"
+      aria-label="Main menu"
+      class="flex items-center justify-center cursor-pointer bf-icon-color-hover">
+      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+    </label>
+
+    <div
+      id="mobile-menu-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Main menu"
+      style="scrollbar-gutter: stable;"
+      class="z-50 invisible overflow-y-auto opacity-0 transition-[opacity,visibility] duration-300 peer-checked:visible peer-checked:opacity-100
+      
+        fixed inset-0 px-6 py-20 bg-neutral-50/97 dark:bg-neutral-900/99
+      
+      bf-scrollbar">
+      <label
+        for="mobile-menu-toggle"
+        tabindex="0"
+        role="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu-dialog"
+        class="fixed end-8 top-5 z-50 h-12 w-12 rounded-full flex items-center justify-center cursor-pointer select-none bf-icon-color-hover border bf-border-color bf-border-color-hover bg-neutral-50 dark:bg-neutral-900">
+        <span class="sr-only">Close menu</span>
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </label>
+      <nav
+        aria-label="Mobile menu"
+        class="mx-auto max-w-md space-y-6">
+        
+  
     
-
-
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
-        
-        <a class="site-title" href="/">
-          serpensoft.com
-          <span class="site-subtitle">Apps for iPhone, iPad, and Mac</span>
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/"
+          aria-label="Home"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            Home
+          </span>
         </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
-              <a
-                href="/"
-                
-                
-              >Home</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/iwriter-2/"
-                
-                
-              >iWriter 2</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/iwriter-pro/"
-                
-                
-              >iWriter Pro</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/games/"
-                
-                
-              >Games</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/picky/"
-                
-                
-              >Picky</a>
-            </li></ul>
         
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
+      </div>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/iwriter-2/"
+          aria-label="iWriter 2"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            iWriter 2
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/iwriter-pro/"
+          aria-label="iWriter Pro"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            iWriter Pro
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/picky/"
+          aria-label="Picky"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            Picky
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+
+        
+  
+
+        
+  
+
       </nav>
+    </div>
+  
+</div>
+
+
+
+
+
+
+
     </div>
   </div>
 </div>
 
 
-    <div class="initial-content">
+
+
+
+  </div>
+</div>
+
+
+<script
+  type="text/javascript"
+  src="/js/background-blur.min.2b8477cfbdb6843f33fd6f7c9a9a1343c895e878a7b55c32979586e6c6ba1018372c0c66a011abdbd7bc1a912f98ea249043c82bfae8fb04a0f37f854ee1e920.js"
+  integrity="sha512-K4R3z722hD8z/W98mpoTQ8iV6HintVwyl5WG5sa6EBg3LAxmoBGr29e8GpEvmOokkEPIK/ro&#43;wSg83&#43;FTuHpIA=="
+  data-blur-id="menu-blur"></script>
       
-
-
-
-
-
-
-  
-    
-
-
-
-
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-    
-    
-    
-      
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
-
-          <meta itemprop="position" content="1" />
-        </li>
-        <span class="sep">/</span>
-      
-      
-        <li class="current">MultiMarkdown Syntax Guide</li>
-      
-    
+    </header>
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        <article class="iw mg mg-toggle" data-view="both">
+  <header class="mg-head mgt-head">
+  <nav class="site-crumbs print:hidden" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/iwriter-2/">iWriter 2</a></li>
+    <li aria-current="page">MultiMarkdown Syntax Guide</li>
   </ol>
 </nav>
+  <h1><span class="md-mark" aria-hidden="true"># </span>MultiMarkdown Syntax Guide</h1>
+  <p class="mg-lede">Everything you can type in iWriter 2: the Markdown you write, and what it turns into. Copy any example into a document to try it.</p>
+</header>
+
+
+  <nav class="mgt-contents" aria-label="Contents">
+    <ol>
+      <li><a href="#headings"><span class="mgt-n">01</span>Headings</a></li><li><a href="#text-styling"><span class="mgt-n">02</span>Text styling</a></li><li><a href="#paragraphs-and-line-breaks"><span class="mgt-n">03</span>Paragraphs and line breaks</a></li><li><a href="#blockquotes"><span class="mgt-n">04</span>Blockquotes</a></li><li><a href="#lists"><span class="mgt-n">05</span>Lists</a></li><li><a href="#horizontal-rule"><span class="mgt-n">06</span>Horizontal rules</a></li><li><a href="#escaped-characters"><span class="mgt-n">07</span>Escaped characters</a></li><li><a href="#links"><span class="mgt-n">08</span>Links</a></li><li><a href="#wikilinks"><span class="mgt-n">09</span>Wikilinks</a></li><li><a href="#images"><span class="mgt-n">10</span>Images</a></li><li><a href="#image-embeds"><span class="mgt-n">11</span>Image embeds</a></li><li><a href="#tables"><span class="mgt-n">12</span>Tables</a></li><li><a href="#footnotes"><span class="mgt-n">13</span>Footnotes</a></li><li><a href="#definition-lists"><span class="mgt-n">14</span>Definition lists</a></li><li><a href="#cross-references"><span class="mgt-n">15</span>Cross-references</a></li><li><a href="#table-of-contents"><span class="mgt-n">16</span>Table of contents</a></li><li><a href="#page-break"><span class="mgt-n">17</span>Page break</a></li><li><a href="#document-metadata"><span class="mgt-n">18</span>Document metadata</a></li><li><a href="#code-blocks"><span class="mgt-n">19</span>Code</a></li><li><a href="#html-blocks"><span class="mgt-n">20</span>HTML</a></li><li><a href="#math"><span class="mgt-n">21</span>Math</a></li><li><a href="#diagrams"><span class="mgt-n">22</span>Diagrams</a></li><li><a href="#insert-other-documents"><span class="mgt-n">23</span>Insert other documents</a></li><li><a href="#citations"><span class="mgt-n">24</span>Citations</a></li><li><a href="#abbreviations"><span class="mgt-n">25</span>Abbreviations</a></li><li><a href="#glossary"><span class="mgt-n">26</span>Glossary</a></li><li><a href="#subscript-and-superscript"><span class="mgt-n">27</span>Subscript and superscript</a></li>
+    </ol>
+  </nav>
+
+  <div class="mgt-bar" data-mgt-bar hidden>
+    <span class="mgt-bar-label">Show</span>
+    <div class="mgt-seg" role="group" aria-label="Show examples as">
+      <button type="button" data-view="md" aria-pressed="false">Markdown</button>
+      <button type="button" data-view="out" aria-pressed="false">Preview</button>
+      <button type="button" data-view="both" aria-pressed="true">Both</button>
+    </div>
+  </div>
 
   
+  <section class="mgt-section" id="headings" aria-labelledby="headings-title">
+    
+    <p class="mgt-num" aria-hidden="true">01</p>
+    <h2 id="headings-title">Headings</h2>
+    <div class="mg-text mgt-lede">To create a heading, add one to six <code>#</code> symbols before your heading text. The number of <code>#</code> you use will determine the hierarchy level and typeface size of the heading.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Six levels</span>
+        <span class="mgt-flip" role="group" aria-label="Show Six levels as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code># Trip to Lisbon
+## Day one
+### Breakfast
+#### Pastéis de nata
+##### Where to buy them
+###### Opening hours</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p class="mg-h mg-h1">Trip to Lisbon</p>
+<p class="mg-h mg-h2">Day one</p>
+<p class="mg-h mg-h3">Breakfast</p>
+<p class="mg-h mg-h4">Pastéis de nata</p>
+<p class="mg-h mg-h5">Where to buy them</p>
+<p class="mg-h mg-h6">Opening hours</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Heading with an id</span>
+        <span class="mgt-flip" role="group" aria-label="Show Heading with an id as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>## Day one [day-1]
 
-
-<div id="main" role="main">
+Back to [Day one](#day-1).</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p class="mg-h mg-h2">Day one</p>
+<p>Back to <a href="#day-1">Day one</a>.</p></div>
+      </div>
+      <div class="mg-note mgt-note">An id in square brackets lets you link to the heading from anywhere in the document.</div>
+    </figure>
+    
+    
+  </section>
   
-
-
-
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="MultiMarkdown Syntax Guide">
+  <section class="mgt-section" id="text-styling" aria-labelledby="text-styling-title">
     
+    <p class="mgt-num" aria-hidden="true">02</p>
+    <h2 id="text-styling-title">Text styling</h2>
+    <div class="mg-text mgt-lede">Wrap words in symbols to make them bold, italic, crossed out or highlighted.</div>
     
-    
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/mmd-syntax-guide/" itemprop="url">MultiMarkdown Syntax Guide
-</a>
-          </h1>
-          
-
-
-
-        </header>
-      
-
-      <section class="page__content e-content" itemprop="text">
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Bold</span>
+        <span class="mgt-flip" role="group" aria-label="Show Bold as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
         
-          <aside class="sidebar__right sticky">
-            <nav class="toc" aria-label="Table of contents">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#headings">Headings</a></li><li><a href="#text-styling">Text Styling</a></li><li><a href="#lists">Lists</a><ul><li><a href="#nested-lists">Nested Lists</a></li></ul></li><li><a href="#links">Links</a></li><li><a href="#wikilinks">Wikilinks</a></li><li><a href="#images">Images</a><ul><li><a href="#wikilink-embeds">Wikilink Embeds</a></li></ul></li><li><a href="#blockquotes">Blockquotes</a></li><li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li><li><a href="#page-break">Page Break</a></li><li><a href="#code-blocks">Code Blocks</a></li><li><a href="#fenced-code-blocks">Fenced Code Blocks</a></li><li><a href="#footnotes">Footnotes</a></li><li><a href="#horizontal-rule">Horizontal rule</a></li><li><a href="#tables">Tables</a></li><li><a href="#html-blocks">HTML Blocks</a></li><li><a href="#math-and-diagrams">Math and Diagrams</a></li><li><a href="#table-of-contents">Table of contents</a></li><li><a href="#insert-other-documents">Insert other documents</a><ul><li><a href="#multimarkdown-style-transclude">MultiMarkdown Style (Transclude)</a></li><li><a href="#wikilink-embeds-1">Wikilink Embeds</a></li></ul></li><li><a href="#citations">Citations</a></li><li><a href="#cross-references">Cross-references</a></li><li><a href="#definition-lists">Definition Lists</a></li><li><a href="#abbreviations">Abbreviations</a></li><li><a href="#glossary">Glossary</a></li><li><a href="#subscript--superscript">Subscript &amp; Superscript</a></li><li><a href="#escaped-characters">Escaped characters</a></li><li><a href="#document-metadata">Document Metadata</a></li><li><a href="#acknowledgements">Acknowledgements</a></li></ul>
-            </nav>
-          </aside>
+<pre class="mg-src" aria-label="Markdown"><code>Pack **light** and leave __early__.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Pack <strong>light</strong> and leave <strong>early</strong>.</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Italic</span>
+        <span class="mgt-flip" role="group" aria-label="Show Italic as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
         
-        <h2 id="headings">Headings</h2>
-
-<p>To create a heading, add one to six <code class="language-plaintext highlighter-rouge">#</code> symbols before your heading text. The number of <code class="language-plaintext highlighter-rouge">#</code> you use will determine the 
-hierarchy level and typeface size of the heading.</p>
-
-<p><strong>ATX-Style Headings</strong></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is a heading H1
-## This is a heading H2
-### This is a heading H3
-#### This is a heading H4
-##### This is a heading H5
-###### This is a heading H6
-
-# Heading with custom id [custom-id]
-</code></pre></div></div>
-
-<h2 id="text-styling">Text Styling</h2>
-
-<p><strong>Strong style</strong></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This text is **bold**.
-This text is also __bold__.
-</code></pre></div></div>
-
-<p><em>Emphasis style</em></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This text is *italicized*.
-This text is also _italicized_.
-</code></pre></div></div>
-
-<p><strong><em>Oblique style</em></strong></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This text is ***oblique***.
-This text is also ___oblique___.
-</code></pre></div></div>
-
-<p><del>Strikethrough style</del></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>And this is the ~~strikethrough~~ style.
-</code></pre></div></div>
-
-<p>==Highlight style==</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This text is ==highlighted==.
-This text is also ::highlighted::.
-</code></pre></div></div>
-
-<h2 id="lists">Lists</h2>
-
-<p>You can make an unordered list by preceding one or more lines of text with <code class="language-plaintext highlighter-rouge">-</code>, <code class="language-plaintext highlighter-rouge">*</code>, or <code class="language-plaintext highlighter-rouge">+</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Bulleted list item
-+ Bulleted list item
-- Bulleted list item
-</code></pre></div></div>
-
-<p>To order your list, precede each line with a number.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Numbered list item
-2. Numbered list item
-3. Numbered list item
-</code></pre></div></div>
-
-<p>To create a task list, preface list items with a hyphen and space followed by <code class="language-plaintext highlighter-rouge">[ ]</code>. To mark a task as complete, use <code class="language-plaintext highlighter-rouge">[x]</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [ ] Task list item
-- [ ] Task list item
-- [x] Task list item
-</code></pre></div></div>
-
-<h3 id="nested-lists">Nested Lists</h3>
-
-<p>You can create a nested list by indenting one or more list items below another item.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. First list item
-   - First nested list item
-     - Second nested list item
-</code></pre></div></div>
-
-<h2 id="links">Links</h2>
-
-<p>You can create an inline link by wrapping link text in brackets <code class="language-plaintext highlighter-rouge">[ ]</code>, and then wrapping the URL in parentheses <code class="language-plaintext highlighter-rouge">( )</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Link Title](/url/to/destination)
-[iwriter](https://serpensoft.com/iwriter-2/)
-</code></pre></div></div>
-
-<p>If your URL contains blank spaces, you must escape them by replacing them with <code class="language-plaintext highlighter-rouge">%20</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Optional Link Title](/url%20with%20spaces)
-</code></pre></div></div>
-
-<p>Inline links:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;foo@example.com&gt;
-Link to &lt;http://serpensoft.com&gt;
-</code></pre></div></div>
-
-<p>Reference-style link:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Link to [Website][Link].
-...
-[Link]: http://serpensoft.com
-</code></pre></div></div>
-
-<p>Reference link with styling:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Link to [Website].
-...
-[Website]: http://serpensoft.com style="border: solid black 1px;"
-</code></pre></div></div>
-
-<h2 id="wikilinks">Wikilinks</h2>
-
-<p><strong>iWriter 2</strong> supports the following wikilink format:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[link_path]] 
-
-[[path_to_document.md]]
-</code></pre></div></div>
-
-<p>To link to a note in a folder, include the folder path before the note name. Folder paths start at the vault root and use forward slashes <code class="language-plaintext highlighter-rouge">/</code>:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[folder/link_path]] 
-
-[[folder/path_to_document.md]]
-</code></pre></div></div>
-
-<p>Use a vertical bar <code class="language-plaintext highlighter-rouge">|</code> to change the title text:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[Example|Custom name]]
-</code></pre></div></div>
-
-<h2 id="images">Images</h2>
-
-<p>You can display an image by adding <code class="language-plaintext highlighter-rouge">!</code> and wrapping the alt text in <code class="language-plaintext highlighter-rouge">[ ]</code>. Alt text is a short text equivalent of the information in the image. Then, wrap the link for the image in parentheses <code class="language-plaintext highlighter-rouge">()</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Optional Caption](/link/to/image "Optional title")
-</code></pre></div></div>
-
-<p>Inline image:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![image](Website.png "This is a title")
-</code></pre></div></div>
-
-<p>Image with attributes:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![image]
-...
-[image]: Website.png "This is a title" height=25px width=50px
-</code></pre></div></div>
-
-<p>Image by itself becomes a figure:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![This is the caption][image]
-
-[image]: Website.png "This is the title" height=45px width=120px
-</code></pre></div></div>
-
-<h3 id="wikilink-embeds">Wikilink Embeds</h3>
-
-<p>To embed an image:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![[Image.jpeg]]
-</code></pre></div></div>
-
-<p>You can change the image dimensions by adding <code class="language-plaintext highlighter-rouge">|200x100</code> to the link, where <code class="language-plaintext highlighter-rouge">200</code> is the <em>width</em> and <code class="language-plaintext highlighter-rouge">100</code> is the <em>height</em>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![[Image.jpeg|200x100]]
-</code></pre></div></div>
-
-<p>If you only specify the <em>width</em>, the image scales proportionally:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![[Image.jpeg|200]]
-</code></pre></div></div>
-
-<h2 id="blockquotes">Blockquotes</h2>
-
-<p>You can quote text with a <code class="language-plaintext highlighter-rouge">&gt;</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Regular text.
-
-&gt; Blockquote
-&gt; with two lines.
-And one more line.
-&gt;&gt; And a second level blockquote.
-</code></pre></div></div>
-
-<h2 id="paragraphs-and-line-breaks">Paragraphs and Line Breaks</h2>
-
-<p>To create a line break in a Markdown file, you will need to include one of the following:</p>
-
-<p>Include two spaces at the end of the first line.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example  
-Will span two lines.
-</code></pre></div></div>
-
-<p>Include a backslash at the end of the first line.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example\
-Will span two lines.
-</code></pre></div></div>
-
-<p>Include an HTML single line break tag at the end of the first line.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example&lt;br/&gt;
-Will span two lines.
-</code></pre></div></div>
-
-<p>Or, leave a blank line between two lines.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example
- 
-Will span two lines.
-</code></pre></div></div>
-
-<h2 id="page-break">Page Break</h2>
-
-<p>Use 5 or more plus <code class="language-plaintext highlighter-rouge">+</code> symbols to add a page break.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+++++
-</code></pre></div></div>
-
-<h2 id="code-blocks">Code Blocks</h2>
-
-<p>Use a grave accent (backtick) symbol to add an inline code block.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>`This is an inline code block.`
-</code></pre></div></div>
-
-<p>Indent text with tabs or 4+ space characters to create a multiline code block:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a longer
-section of code
-on multiple lines.
-</code></pre></div></div>
-
-<h2 id="fenced-code-blocks">Fenced Code Blocks</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
-This is a fenced
-code block.
-```
-</code></pre></div></div>
-
-<p>Fenced code block with a language marker:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```perl
-  print "Hello, world!\n";
-  $a = 0;
-  while ($a &lt; 10) {
-    print "$a...\n";
-    $a++;
-  }
-```
-</code></pre></div></div>
-
-<h2 id="footnotes">Footnotes</h2>
-
-<p>Reference style:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Text[^foot].
-
-[^foot]: This is a footnote.
-</code></pre></div></div>
-
-<p>Inline:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Text[^This is an inline footnote.].
-</code></pre></div></div>
-
-<h2 id="horizontal-rule">Horizontal rule</h2>
-
-<p><strong>iWriter 2</strong> supports several styles of delimiters:</p>
-
-<p><em>Thin line</em> <code class="language-plaintext highlighter-rouge">---</code></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>----
-
-*****
-</code></pre></div></div>
-
-<p><em>Dashed line</em> <code class="language-plaintext highlighter-rouge">- - -</code></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- - - - -
-
-* * * * *
-</code></pre></div></div>
-
-<p><em>Double line</em> <code class="language-plaintext highlighter-rouge">===</code></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=====
-</code></pre></div></div>
-
-<p><em>Wavy line</em> <code class="language-plaintext highlighter-rouge">~~~</code></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~~~
-</code></pre></div></div>
-
-<h2 id="tables">Tables</h2>
-
-<p>Simple table:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| foo | bar |
-| --- | --- |
-| foo | bar |
-| foo bar  ||
-[*caption*][id]
-</code></pre></div></div>
-
-<p>Table with aligned columns:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| right aligned | centered | left aligned |
-| ---: | :---: | :--- |
-| foo | bar | bat |
-| foo | bar | bat |
-[*caption*][id]
-</code></pre></div></div>
-
-<h2 id="html-blocks">HTML Blocks</h2>
-
-<p>The app supports plain HTML blocks.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;This is HTML paragraph.&lt;/p&gt;
-
-&lt;mark&gt;This text is highlighted.&lt;/mark&gt;
-</code></pre></div></div>
-
-<p>You can also modify the underlying styling using CSS:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;style&gt;
-p { color: yellow; }
+<pre class="mg-src" aria-label="Markdown"><code>The tram is *always* full, _especially_ at noon.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>The tram is <em>always</em> full, <em>especially</em> at noon.</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Bold italic</span>
+        <span class="mgt-flip" role="group" aria-label="Show Bold italic as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Do ***not*** miss the sunset, ___really___.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Do <strong><em>not</em></strong> miss the sunset, <strong><em>really</em></strong>.</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Strikethrough</span>
+        <span class="mgt-flip" role="group" aria-label="Show Strikethrough as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>We leave at ~~nine~~ ten.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>We leave at <del>nine</del> ten.</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Highlight</span>
+        <span class="mgt-flip" role="group" aria-label="Show Highlight as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>The museum is ==closed on Mondays==. Book ::a day ahead::.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>The museum is <mark>closed on Mondays</mark>. Book <mark>a day ahead</mark>.</p></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="paragraphs-and-line-breaks" aria-labelledby="paragraphs-and-line-breaks-title">
+    
+    <p class="mgt-num" aria-hidden="true">03</p>
+    <h2 id="paragraphs-and-line-breaks-title">Paragraphs and line breaks</h2>
+    <div class="mg-text mgt-lede">A blank line starts a new paragraph. To break a line inside a paragraph, end it with two spaces, a backslash or <code>&lt;br/&gt;</code>.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Two spaces</span>
+        <span class="mgt-flip" role="group" aria-label="Show Two spaces as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Rua Augusta 24  
+1100-053 Lisbon</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Rua Augusta 24<br>1100-053 Lisbon</p></div>
+      </div>
+      <div class="mg-note mgt-note">The dots stand for the two spaces at the end of the line.</div>
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Backslash</span>
+        <span class="mgt-flip" role="group" aria-label="Show Backslash as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Rua Augusta 24\
+1100-053 Lisbon</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Rua Augusta 24<br>1100-053 Lisbon</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>HTML line break</span>
+        <span class="mgt-flip" role="group" aria-label="Show HTML line break as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Rua Augusta 24&lt;br/&gt;
+1100-053 Lisbon</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Rua Augusta 24<br>1100-053 Lisbon</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>New paragraph</span>
+        <span class="mgt-flip" role="group" aria-label="Show New paragraph as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Rua Augusta 24
+
+1100-053 Lisbon</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Rua Augusta 24</p>
+<p>1100-053 Lisbon</p></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="blockquotes" aria-labelledby="blockquotes-title">
+    
+    <p class="mgt-num" aria-hidden="true">04</p>
+    <h2 id="blockquotes-title">Blockquotes</h2>
+    <div class="mg-text mgt-lede">Start a line with <code>&gt;</code> to quote it. Use <code>&gt;&gt;</code> to quote inside a quote.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Quote and nested quote</span>
+        <span class="mgt-flip" role="group" aria-label="Show Quote and nested quote as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>The guidebook says:
+
+&gt; Lisbon is a city of seven hills
+&gt; and countless staircases.
+&gt;
+&gt;&gt; Bring comfortable shoes.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>The guidebook says:</p>
+<blockquote><p>Lisbon is a city of seven hills and countless staircases.</p>
+<blockquote><p>Bring comfortable shoes.</p></blockquote></blockquote></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Lazy continuation</span>
+        <span class="mgt-flip" role="group" aria-label="Show Lazy continuation as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>&gt; The view from the castle
+is worth every step.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><blockquote><p>The view from the castle is worth every step.</p></blockquote></div>
+      </div>
+      <div class="mg-note mgt-note">A line right after a quoted line joins the quote without its own <code>&gt;</code>.</div>
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="lists" aria-labelledby="lists-title">
+    <span class="mgt-alias" id="nested-lists"></span>
+    <p class="mgt-num" aria-hidden="true">05</p>
+    <h2 id="lists-title">Lists</h2>
+    <div class="mg-text mgt-lede">Start lines with <code>-</code>, <code>*</code> or <code>+</code> for unordered lists, or with numbers for ordered lists. Indent a line to nest it under the one above.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Bulleted list</span>
+        <span class="mgt-flip" role="group" aria-label="Show Bulleted list as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>- Passport
+* Charger
+&#43; Sunscreen</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><ul><li>Passport</li><li>Charger</li><li>Sunscreen</li></ul></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Numbered list</span>
+        <span class="mgt-flip" role="group" aria-label="Show Numbered list as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>1. Land at 9:40
+2. Take the metro
+3. Check in</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><ol><li>Land at 9:40</li><li>Take the metro</li><li>Check in</li></ol></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Task list</span>
+        <span class="mgt-flip" role="group" aria-label="Show Task list as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>- [x] Book flights
+- [x] Book the hotel
+- [ ] Buy a tram pass</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><ul class="mg-tasks">
+<li><span class="mg-check is-done" aria-label="Done"></span>Book flights</li>
+<li><span class="mg-check is-done" aria-label="Done"></span>Book the hotel</li>
+<li><span class="mg-check" aria-label="To do"></span>Buy a tram pass</li>
+</ul></div>
+      </div>
+      <div class="mg-note mgt-note">Type <code>[ ]</code> for an open task and <code>[x]</code> for a done one.</div>
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Nested list</span>
+        <span class="mgt-flip" role="group" aria-label="Show Nested list as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>1. Belém
+   - The tower
+   - The monastery
+     - The cloister
+2. Alfama</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><ol><li>Belém<ul><li>The tower</li><li>The monastery<ul><li>The cloister</li></ul></li></ul></li><li>Alfama</li></ol></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="horizontal-rule" aria-labelledby="horizontal-rule-title">
+    
+    <p class="mgt-num" aria-hidden="true">06</p>
+    <h2 id="horizontal-rule-title">Horizontal rules</h2>
+    <div class="mg-text mgt-lede">Put three or more of the same symbol on a line of its own to draw a rule. iWriter 2 has four styles.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Thin line</span>
+        <span class="mgt-flip" role="group" aria-label="Show Thin line as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>-----
+
+*****</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><hr class="mg-hr mg-hr--thin"></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Dashed line</span>
+        <span class="mgt-flip" role="group" aria-label="Show Dashed line as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>- - - - -
+
+* * * * *</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><hr class="mg-hr mg-hr--dashed"></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Double line</span>
+        <span class="mgt-flip" role="group" aria-label="Show Double line as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>=====</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><hr class="mg-hr mg-hr--double"></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Wavy line</span>
+        <span class="mgt-flip" role="group" aria-label="Show Wavy line as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>~~~~~</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><hr class="mg-hr mg-hr--wavy"></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="escaped-characters" aria-labelledby="escaped-characters-title">
+    
+    <p class="mgt-num" aria-hidden="true">07</p>
+    <h2 id="escaped-characters-title">Escaped characters</h2>
+    <div class="mg-text mgt-lede">Put a backslash before a symbol to show it as typed instead of formatting with it.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Backslash escapes</span>
+        <span class="mgt-flip" role="group" aria-label="Show Backslash escapes as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Tickets from \$4 \&amp; up. Type \*stars\* and \_underscores\_ as they are.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Tickets from $4 &amp; up. Type *stars* and _underscores_ as they are.</p></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="links" aria-labelledby="links-title">
+    
+    <p class="mgt-num" aria-hidden="true">08</p>
+    <h2 id="links-title">Links</h2>
+    <div class="mg-text mgt-lede">You can create an inline link by wrapping link text in brackets <code>[ ]</code>, and then wrapping the URL in parentheses <code>( )</code>.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Link</span>
+        <span class="mgt-flip" role="group" aria-label="Show Link as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Written in [iWriter 2](https://serpensoft.com/iwriter-2/).</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Written in <a href="https://serpensoft.com/iwriter-2/">iWriter 2</a>.</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Link with a title</span>
+        <span class="mgt-flip" role="group" aria-label="Show Link with a title as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Ride [Tram 28](https://example.com/tram-28 &#34;The famous yellow tram&#34;).</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Ride <a href="#" title="The famous yellow tram">Tram 28</a>.</p></div>
+      </div>
+      <div class="mg-note mgt-note">The title shows when the pointer rests on the link.</div>
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Spaces in the address</span>
+        <span class="mgt-flip" role="group" aria-label="Show Spaces in the address as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>See the [itinerary](/notes/Lisbon%20trip.md).</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>See the <a href="#">itinerary</a>.</p></div>
+      </div>
+      <div class="mg-note mgt-note">Replace each space in an address with <code>%20</code>.</div>
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Automatic links</span>
+        <span class="mgt-flip" role="group" aria-label="Show Automatic links as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>&lt;https://serpensoft.com&gt;
+&lt;support@example.com&gt;</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p><a href="https://serpensoft.com">https://serpensoft.com</a><br>
+<a href="#">support@example.com</a></p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Reference link</span>
+        <span class="mgt-flip" role="group" aria-label="Show Reference link as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Read the [museum guide][guide] first.
+
+[guide]: https://example.com/museums</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Read the <a href="#">museum guide</a> first.</p></div>
+      </div>
+      <div class="mg-note mgt-note">Keep long addresses out of the way, anywhere in the document.</div>
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Reference link with a style</span>
+        <span class="mgt-flip" role="group" aria-label="Show Reference link with a style as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Visit the [Website].
+
+[Website]: https://serpensoft.com style=&#34;border: solid 1px;&#34;</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Visit the <a href="#" style="border: solid 1px; padding: 0 0.2em;">Website</a>.</p></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="wikilinks" aria-labelledby="wikilinks-title">
+    
+    <p class="mgt-num" aria-hidden="true">09</p>
+    <h2 id="wikilinks-title">Wikilinks</h2>
+    <div class="mg-text mgt-lede">Link to another document in iWriter 2 by its name, in double square brackets.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Link to a document</span>
+        <span class="mgt-flip" role="group" aria-label="Show Link to a document as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>See [[Packing list]] and [[Budget.md]].</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>See <a class="mg-wiki" href="#">Packing list</a> and <a class="mg-wiki" href="#">Budget.md</a>.</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Document in a folder</span>
+        <span class="mgt-flip" role="group" aria-label="Show Document in a folder as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Dinner ideas are in [[Trips/Lisbon/Restaurants]].</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Dinner ideas are in <a class="mg-wiki" href="#">Trips/Lisbon/Restaurants</a>.</p></div>
+      </div>
+      <div class="mg-note mgt-note">Folder paths start at the top folder and use forward slashes <code>/</code>.</div>
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Your own link text</span>
+        <span class="mgt-flip" role="group" aria-label="Show Your own link text as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Dinner ideas are in [[Trips/Lisbon/Restaurants|Where to eat]].</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Dinner ideas are in <a class="mg-wiki" href="#">Where to eat</a>.</p></div>
+      </div>
+      <div class="mg-note mgt-note">Put the text to show after a vertical bar <code>|</code>.</div>
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="images" aria-labelledby="images-title">
+    
+    <p class="mgt-num" aria-hidden="true">10</p>
+    <h2 id="images-title">Images</h2>
+    <div class="mg-text mgt-lede">You can display an image by adding <code>!</code> and wrapping the alt text in <code>[ ]</code>. Alt text is a short text equivalent of the information in the image. Then, wrap the link for the image in parentheses <code>( )</code>.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Image</span>
+        <span class="mgt-flip" role="group" aria-label="Show Image as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>![Tram 28 on the hill](tram.jpg &#34;Tram 28&#34;)</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><figure class="mg-fig"><svg class="mg-img" width="240" height="160" viewBox="0 0 240 160" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A yellow tram climbing a green hill"><rect width="240" height="160" fill="#cfe0f6"/><circle cx="192" cy="38" r="16" fill="#ffe27a"/><path d="M0 118L80 72L150 104L240 76V160H0Z" fill="#a9c7a2"/><path d="M0 142L240 102V160H0Z" fill="#7c9a77"/><g transform="rotate(-9.5 122 120)"><rect x="80" y="90" width="84" height="32" rx="6" fill="#f5c542"/><rect x="88" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="107" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="126" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="145" y="96" width="11" height="12" rx="2" fill="#fff8e1"/><rect x="80" y="114" width="84" height="4" fill="#d29b17"/><path d="M122 90V78" stroke="#3a3a3a" stroke-width="2"/></g></svg><figcaption>Tram 28 on the hill</figcaption></figure></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Size and attributes</span>
+        <span class="mgt-flip" role="group" aria-label="Show Size and attributes as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>![The climb to the castle][tram]
+
+[tram]: tram.jpg &#34;Tram 28&#34; width=150px height=100px</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><figure class="mg-fig"><svg class="mg-img" width="150" height="100" viewBox="0 0 240 160" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A yellow tram climbing a green hill"><rect width="240" height="160" fill="#cfe0f6"/><circle cx="192" cy="38" r="16" fill="#ffe27a"/><path d="M0 118L80 72L150 104L240 76V160H0Z" fill="#a9c7a2"/><path d="M0 142L240 102V160H0Z" fill="#7c9a77"/><g transform="rotate(-9.5 122 120)"><rect x="80" y="90" width="84" height="32" rx="6" fill="#f5c542"/><rect x="88" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="107" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="126" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="145" y="96" width="11" height="12" rx="2" fill="#fff8e1"/><rect x="80" y="114" width="84" height="4" fill="#d29b17"/><path d="M122 90V78" stroke="#3a3a3a" stroke-width="2"/></g></svg><figcaption>The climb to the castle</figcaption></figure></div>
+      </div>
+      <div class="mg-note mgt-note">Add a size after the file name in a reference.</div>
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="image-embeds" aria-labelledby="image-embeds-title">
+    <span class="mgt-alias" id="wikilink-embeds"></span>
+    <p class="mgt-num" aria-hidden="true">11</p>
+    <h2 id="image-embeds-title">Image embeds</h2>
+    <div class="mg-text mgt-lede">Show a picture from your folders with <code>![[ ]]</code>. You can change the image dimensions by adding <code>|200x100</code> to the link, where <code>200</code> is the <em>width</em> and <code>100</code> is the <em>height</em>.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Embed a picture</span>
+        <span class="mgt-flip" role="group" aria-label="Show Embed a picture as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>![[tram.jpg]]</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p><svg class="mg-img" width="240" height="160" viewBox="0 0 240 160" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A yellow tram climbing a green hill"><rect width="240" height="160" fill="#cfe0f6"/><circle cx="192" cy="38" r="16" fill="#ffe27a"/><path d="M0 118L80 72L150 104L240 76V160H0Z" fill="#a9c7a2"/><path d="M0 142L240 102V160H0Z" fill="#7c9a77"/><g transform="rotate(-9.5 122 120)"><rect x="80" y="90" width="84" height="32" rx="6" fill="#f5c542"/><rect x="88" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="107" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="126" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="145" y="96" width="11" height="12" rx="2" fill="#fff8e1"/><rect x="80" y="114" width="84" height="4" fill="#d29b17"/><path d="M122 90V78" stroke="#3a3a3a" stroke-width="2"/></g></svg></p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Width and height</span>
+        <span class="mgt-flip" role="group" aria-label="Show Width and height as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>![[tram.jpg|200x100]]</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p><svg class="mg-img" width="200" height="100" viewBox="0 0 240 160" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A yellow tram climbing a green hill"><rect width="240" height="160" fill="#cfe0f6"/><circle cx="192" cy="38" r="16" fill="#ffe27a"/><path d="M0 118L80 72L150 104L240 76V160H0Z" fill="#a9c7a2"/><path d="M0 142L240 102V160H0Z" fill="#7c9a77"/><g transform="rotate(-9.5 122 120)"><rect x="80" y="90" width="84" height="32" rx="6" fill="#f5c542"/><rect x="88" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="107" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="126" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="145" y="96" width="11" height="12" rx="2" fill="#fff8e1"/><rect x="80" y="114" width="84" height="4" fill="#d29b17"/><path d="M122 90V78" stroke="#3a3a3a" stroke-width="2"/></g></svg></p></div>
+      </div>
+      <div class="mg-note mgt-note"><code>200x100</code> is the width and the height.</div>
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Width only</span>
+        <span class="mgt-flip" role="group" aria-label="Show Width only as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>![[tram.jpg|120]]</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p><svg class="mg-img" width="120" height="80" viewBox="0 0 240 160" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A yellow tram climbing a green hill"><rect width="240" height="160" fill="#cfe0f6"/><circle cx="192" cy="38" r="16" fill="#ffe27a"/><path d="M0 118L80 72L150 104L240 76V160H0Z" fill="#a9c7a2"/><path d="M0 142L240 102V160H0Z" fill="#7c9a77"/><g transform="rotate(-9.5 122 120)"><rect x="80" y="90" width="84" height="32" rx="6" fill="#f5c542"/><rect x="88" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="107" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="126" y="96" width="14" height="12" rx="2" fill="#fff8e1"/><rect x="145" y="96" width="11" height="12" rx="2" fill="#fff8e1"/><rect x="80" y="114" width="84" height="4" fill="#d29b17"/><path d="M122 90V78" stroke="#3a3a3a" stroke-width="2"/></g></svg></p></div>
+      </div>
+      <div class="mg-note mgt-note">With only a width, the picture keeps its proportions.</div>
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="tables" aria-labelledby="tables-title">
+    
+    <p class="mgt-num" aria-hidden="true">12</p>
+    <h2 id="tables-title">Tables</h2>
+    <div class="mg-text mgt-lede">Separate columns with <code>|</code> and put a line of dashes under the header. Colons in that line align the columns.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Table with a caption</span>
+        <span class="mgt-flip" role="group" aria-label="Show Table with a caption as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>| Day | Area   |
+| --- | ------ |
+| Mon | Alfama |
+| Tue | Belém  |
+[Where we&#39;ll be][days]</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><table><caption>Where we'll be</caption>
+<thead><tr><th>Day</th><th>Area</th></tr></thead>
+<tbody><tr><td>Mon</td><td>Alfama</td></tr><tr><td>Tue</td><td>Belém</td></tr></tbody></table></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Aligned columns and a joined cell</span>
+        <span class="mgt-flip" role="group" aria-label="Show Aligned columns and a joined cell as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>| Item   | Day  | Cost |
+| :----- | :--: | ---: |
+| Hotel  | Mon  | €90  |
+| Museum | Tue  | €12  |
+| Total         || €102 |</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><table>
+<thead><tr><th style="text-align:left">Item</th><th style="text-align:center">Day</th><th style="text-align:right">Cost</th></tr></thead>
+<tbody>
+<tr><td style="text-align:left">Hotel</td><td style="text-align:center">Mon</td><td style="text-align:right">€90</td></tr>
+<tr><td style="text-align:left">Museum</td><td style="text-align:center">Tue</td><td style="text-align:right">€12</td></tr>
+<tr><td style="text-align:left" colspan="2">Total</td><td style="text-align:right">€102</td></tr>
+</tbody></table></div>
+      </div>
+      <div class="mg-note mgt-note"><code>:--</code> aligns left, <code>:-:</code> centers, <code>--:</code> aligns right. <code>||</code> joins a cell with the next one.</div>
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="footnotes" aria-labelledby="footnotes-title">
+    
+    <p class="mgt-num" aria-hidden="true">13</p>
+    <h2 id="footnotes-title">Footnotes</h2>
+    <div class="mg-text mgt-lede">Add <code>[^name]</code> where the note belongs, and write the note anywhere in the document.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Footnote</span>
+        <span class="mgt-flip" role="group" aria-label="Show Footnote as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>The castle dates from the 11th century.[^castle]
+
+[^castle]: It has been rebuilt many times since.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>The castle dates from the 11th century.<sup class="mg-fn"><a href="#">1</a></sup></p>
+<ol class="mg-notes"><li>It has been rebuilt many times since. <a href="#" aria-label="Back to text">↩</a></li></ol></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Inline footnote</span>
+        <span class="mgt-flip" role="group" aria-label="Show Inline footnote as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Lunch was cheap.[^Under ten euros, with wine.]</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Lunch was cheap.<sup class="mg-fn"><a href="#">1</a></sup></p>
+<ol class="mg-notes"><li>Under ten euros, with wine. <a href="#" aria-label="Back to text">↩</a></li></ol></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="definition-lists" aria-labelledby="definition-lists-title">
+    
+    <p class="mgt-num" aria-hidden="true">14</p>
+    <h2 id="definition-lists-title">Definition lists</h2>
+    <div class="mg-text mgt-lede">Put a term on one line and its definition on the next, after a colon and spaces.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Terms and definitions</span>
+        <span class="mgt-flip" role="group" aria-label="Show Terms and definitions as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Pastel de nata
+:   A custard tart with a flaky crust.
+
+Bica
+:   A short, strong espresso.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><dl><dt>Pastel de nata</dt><dd>A custard tart with a flaky crust.</dd>
+<dt>Bica</dt><dd>A short, strong espresso.</dd></dl></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="cross-references" aria-labelledby="cross-references-title">
+    
+    <p class="mgt-num" aria-hidden="true">15</p>
+    <h2 id="cross-references-title">Cross-references</h2>
+    <div class="mg-text mgt-lede">Link to a heading by its text in square brackets, or by an <code>id</code> you give it.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Link to a heading</span>
+        <span class="mgt-flip" role="group" aria-label="Show Link to a heading as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>## Getting there [arrival]
+
+## Getting around
+
+See [Getting around] for tram tips,
+or go back to [the start][arrival].</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p class="mg-h mg-h2">Getting there</p>
+<p class="mg-h mg-h2">Getting around</p>
+<p>See <a href="#">Getting around</a> for tram tips, or go back to <a href="#">the start</a>.</p></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="table-of-contents" aria-labelledby="table-of-contents-title">
+    
+    <p class="mgt-num" aria-hidden="true">16</p>
+    <h2 id="table-of-contents-title">Table of contents</h2>
+    <div class="mg-text mgt-lede">Use the <code>{{TOC}}</code> shortcut for a table of contents.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Table of contents</span>
+        <span class="mgt-flip" role="group" aria-label="Show Table of contents as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>{{TOC}}
+
+# Trip to Lisbon
+## Day one
+## Day two</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><nav class="mg-toc" aria-label="Table of contents"><ul><li><a href="#">Trip to Lisbon</a><ul><li><a href="#">Day one</a></li><li><a href="#">Day two</a></li></ul></li></ul></nav>
+<p class="mg-h mg-h1">Trip to Lisbon</p>
+<p class="mg-h mg-h2">Day one</p>
+<p class="mg-h mg-h2">Day two</p></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="page-break" aria-labelledby="page-break-title">
+    
+    <p class="mgt-num" aria-hidden="true">17</p>
+    <h2 id="page-break-title">Page break</h2>
+    <div class="mg-text mgt-lede">Use 5 or more plus symbols <code>+</code> to add a page break.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Page break</span>
+        <span class="mgt-flip" role="group" aria-label="Show Page break as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>The end of day one.
+
+&#43;&#43;&#43;&#43;&#43;
+
+Day two starts here.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>The end of day one.</p>
+<div class="mg-pagebreak"><span>Page break</span></div>
+<p>Day two starts here.</p></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="document-metadata" aria-labelledby="document-metadata-title">
+    
+    <p class="mgt-num" aria-hidden="true">18</p>
+    <h2 id="document-metadata-title">Document metadata</h2>
+    <div class="mg-text mgt-lede">Put <code>Key: value</code> lines at the very top of the document. They are used when you export, for example as the title and author of a PDF or EPUB.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Metadata</span>
+        <span class="mgt-flip" role="group" aria-label="Show Metadata as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" data-meta aria-label="Markdown"><code>Title:  Trip to Lisbon
+Author: John Appleseed
+Date:   2025-10-20
+
+# Day one</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><dl class="mg-meta"><dt>Title</dt><dd>Trip to Lisbon</dd><dt>Author</dt><dd>John Appleseed</dd><dt>Date</dt><dd>2025-10-20</dd></dl>
+<p class="mg-h mg-h1">Day one</p></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="code-blocks" aria-labelledby="code-blocks-title">
+    <span class="mgt-alias" id="fenced-code-blocks"></span>
+    <p class="mgt-num" aria-hidden="true">19</p>
+    <h2 id="code-blocks-title">Code</h2>
+    <div class="mg-text mgt-lede">Wrap code in backticks inside a sentence. For a block of code, indent every line with a tab or four spaces, or use a fenced block.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Inline code</span>
+        <span class="mgt-flip" role="group" aria-label="Show Inline code as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Name the file `lisbon-notes.md`.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Name the file <code>lisbon-notes.md</code>.</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Indented code block</span>
+        <span class="mgt-flip" role="group" aria-label="Show Indented code block as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>To sync the folder:
+
+    cd ~/Trips/Lisbon
+    git pull</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>To sync the folder:</p>
+<pre class="mg-code"><code>cd ~/Trips/Lisbon
+git pull</code></pre></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Fenced code block</span>
+        <span class="mgt-flip" role="group" aria-label="Show Fenced code block as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>```
+Gate 14, seat 22A
+Boarding 08:55
+```</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><pre class="mg-code"><code>Gate 14, seat 22A
+Boarding 08:55</code></pre></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Fenced code with a language</span>
+        <span class="mgt-flip" role="group" aria-label="Show Fenced code with a language as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>```swift
+let city = &#34;Lisbon&#34;
+print(&#34;Hello, \(city)!&#34;)
+```</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><pre class="mg-code"><code><span class="mg-k">let</span> city = <span class="mg-s">"Lisbon"</span>
+<span class="mg-f">print</span>(<span class="mg-s">"Hello, \(city)!"</span>)</code></pre></div>
+      </div>
+      <div class="mg-note mgt-note">Name the language after the backticks to color the code.</div>
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="html-blocks" aria-labelledby="html-blocks-title">
+    
+    <p class="mgt-num" aria-hidden="true">20</p>
+    <h2 id="html-blocks-title">HTML</h2>
+    <div class="mg-text mgt-lede">Plain HTML works too, and a <code>&lt;style&gt;</code> block changes how the preview and exports look.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>HTML</span>
+        <span class="mgt-flip" role="group" aria-label="Show HTML as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>&lt;p&gt;Meet at the &lt;mark&gt;yellow door&lt;/mark&gt;.&lt;/p&gt;</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Meet at the <mark>yellow door</mark>.</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Your own style</span>
+        <span class="mgt-flip" role="group" aria-label="Show Your own style as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>&lt;style&gt;
+p { color: tomato; }
 &lt;/style&gt;
-</code></pre></div></div>
 
-<p class="notice">Blank lines within HTML tags are not supported.</p>
-
-<h2 id="math-and-diagrams">Math and Diagrams</h2>
-
-<p>You can add math expressions to your notes using <code class="language-plaintext highlighter-rouge">MathJax</code> and the <code class="language-plaintext highlighter-rouge">LaTeX</code> notation.</p>
-
-<p>Inline math:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$e^{2i\pi} = 1$
-</code></pre></div></div>
-
-<p>Math block:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
+Red sky at night.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p style="color: tomato">Red sky at night.</p></div>
+      </div>
+      
+    </figure>
+    
+    <div class="mg-tip"><strong>Note</strong> Blank lines inside an HTML tag aren&rsquo;t supported.</div>
+  </section>
+  
+  <section class="mgt-section" id="math" aria-labelledby="math-title">
+    <span class="mgt-alias" id="math-and-diagrams"></span>
+    <p class="mgt-num" aria-hidden="true">21</p>
+    <h2 id="math-title">Math</h2>
+    <div class="mg-text mgt-lede">Write math in LaTeX between <code>$</code> signs inside a sentence, or between <code>$$</code> lines for a block.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Inline math</span>
+        <span class="mgt-flip" role="group" aria-label="Show Inline math as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Euler&#39;s identity, $e^{i\pi} &#43; 1 = 0$, fits on a postcard.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Euler's identity, <math><msup><mi>e</mi><mrow><mi>i</mi><mi>π</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></math>, fits on a postcard.</p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Math block</span>
+        <span class="mgt-flip" role="group" aria-label="Show Math block as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>$$
 \begin{vmatrix}a &amp; b\\
 c &amp; d
 \end{vmatrix}=ad-bc
-$$
-</code></pre></div></div>
-
-<p>You can add diagrams and charts to your notes, using <code class="language-plaintext highlighter-rouge">Mermaid</code>. <code class="language-plaintext highlighter-rouge">Mermaid</code> supports a range of diagrams, such as flow charts, sequence diagrams, and timelines.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
+$$</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><math display="block"><mrow><mo stretchy="true">|</mo><mtable><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable><mo stretchy="true">|</mo></mrow><mo>=</mo><mi>a</mi><mi>d</mi><mo>−</mo><mi>b</mi><mi>c</mi></math></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="diagrams" aria-labelledby="diagrams-title">
+    
+    <p class="mgt-num" aria-hidden="true">22</p>
+    <h2 id="diagrams-title">Diagrams</h2>
+    <div class="mg-text mgt-lede">Draw flowcharts, sequence diagrams, timelines and more with Mermaid.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Sequence diagram</span>
+        <span class="mgt-flip" role="group" aria-label="Show Sequence diagram as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>```mermaid
 sequenceDiagram
-    Alice-&gt;&gt;+John: Hello John, how are you?
-    Alice-&gt;&gt;+John: John, can you hear me?
-    John--&gt;&gt;-Alice: Hi Alice, I can hear you!
-    John--&gt;&gt;-Alice: I feel great!
-```
-</code></pre></div></div>
-
-<h2 id="table-of-contents">Table of contents</h2>
-
-<p>Use this shortcut to generate the document’s table of contents:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{TOC}}
-</code></pre></div></div>
-
-<p>The table of contents will be automatically generated from the available headings.</p>
-
-<h2 id="insert-other-documents">Insert other documents</h2>
-
-<h3 id="multimarkdown-style-transclude">MultiMarkdown Style (Transclude)</h3>
-
-<p>Use the following syntax to attach the content of external document:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{filename.md}} 
-
-{{folder/filename.md}}
-
-{{folder/filename with spaces.md}}
-</code></pre></div></div>
-
-<p class="notice">You can embed plain text files only.</p>
-
-<h3 id="wikilink-embeds-1">Wikilink Embeds</h3>
-
-<p>Use the following syntax to attach the content of external document:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![[filename.md]]
-
-![[folder/filename.md]]
-
-![[folder/filename with spaces.md]]
-</code></pre></div></div>
-
-<p>You can omit the file extension for <code class="language-plaintext highlighter-rouge">.md</code> documents:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![[filename]]
-
-![[folder/filename]]
-
-![[folder/filename with spaces]]
-</code></pre></div></div>
-
-<p class="notice">You can embed plain text files only.</p>
-
-<h2 id="citations">Citations</h2>
-
-<p>Reference style:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cite a source.[p. 42][#source]
-
-[#source]: John Doe. *A Totally Fake Book*. Vanity Press, 2006.
-</code></pre></div></div>
-
-<p>Inline:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cite a source.[p. 42][#John Doe. *A Totally Fake Book*. Vanity Press, 2006.]
-</code></pre></div></div>
-
-<h2 id="cross-references">Cross-references</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Intro #
-
-# Conclusion [fin] #
-
-Link to [Intro].
-
-Link to the [end][fin].
-</code></pre></div></div>
-
-<h2 id="definition-lists">Definition Lists</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Apple
-:   Pomaceous fruit of plants of the genus Malus 
-in the family Rosaceae.
-
-Also the makers of really great products.
-</code></pre></div></div>
-
-<h2 id="abbreviations">Abbreviations</h2>
-
-<p>Reference style:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTML and HTML
-
-[&gt;HTML]: Hypertext Markup Language
-</code></pre></div></div>
-
-<p>Inline:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[&gt;(HTML) Hypertext Markup Language] and HTML
-</code></pre></div></div>
-
-<h2 id="glossary">Glossary</h2>
-
-<p>Reference style:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[?Glossary] is a glossary term.
-
-[?Glossary]: The glossary collects information about
-important terms used in your document.
-</code></pre></div></div>
-
-<p>Inline:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[?(Glossary) The glossary collects information about important terms used in your document] is a glossary term.
-</code></pre></div></div>
-
-<h2 id="subscript--superscript">Subscript &amp; Superscript</h2>
-
-<p>m<sup>2</sup></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> m^2
-</code></pre></div></div>
-
-<p>x<sup>2</sup>y<sup>3</sup></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x^2 y^3
-</code></pre></div></div>
-
-<p>x<sub>z</sub></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x~z
-</code></pre></div></div>
-
-<p>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C~6~H~12~O~6~
-</code></pre></div></div>
-
-<h2 id="escaped-characters">Escaped characters</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\&amp; \$ \* \_
-</code></pre></div></div>
-
-<h2 id="document-metadata">Document Metadata</h2>
-
-<p>Metadata fields should be added at the top of the document.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Title:  This is a title
-Author: John Appleseed
-E-Mail: email@server.com
-Date:   2025-10-20
-</code></pre></div></div>
-
-<p>Metadata will be applied during the export process.</p>
-
-<h2 id="acknowledgements">Acknowledgements</h2>
-
-<p><a href="https://rawgit.com/fletcher/MultiMarkdown-6-Syntax-Guide/master/index.html">MultiMarkdown Syntax Guide</a> by Fletcher T. Penney.</p>
-
-<p><a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github">Quickstart for writing on GitHub</a></p>
-
-<p><a href="https://obsidian.md/help/syntax">Obsidian Help</a></p>
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-
+    Alice-&gt;&gt;John: Hello John, how are you?
+    John--&gt;&gt;Alice: Great! See you in Lisbon.
+```</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><svg class="mg-seq" viewBox="0 0 320 196" role="img" aria-label="Sequence diagram: Alice says hello to John, and John answers.">
+<defs><marker id="mg-seq-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+<g fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"><path d="M60 40V160"/><path d="M260 40V160"/></g>
+<g class="mg-seq-box"><rect x="20" y="8" width="80" height="32" rx="4"/><rect x="220" y="8" width="80" height="32" rx="4"/><rect x="20" y="160" width="80" height="32" rx="4"/><rect x="220" y="160" width="80" height="32" rx="4"/></g>
+<g font-size="13" text-anchor="middle" fill="currentColor"><text x="60" y="29">Alice</text><text x="260" y="29">John</text><text x="60" y="181">Alice</text><text x="260" y="181">John</text></g>
+<g font-size="11" text-anchor="middle" fill="currentColor"><text x="160" y="68">Hello John, how are you?</text><text x="160" y="118">Great! See you in Lisbon.</text></g>
+<g fill="none" stroke="currentColor" stroke-width="1.4" marker-end="url(#mg-seq-arrow)"><path d="M62 78H256"/><path d="M258 128H64" stroke-dasharray="5 4"/></g>
+</svg></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
   
+  <section class="mgt-section" id="insert-other-documents" aria-labelledby="insert-other-documents-title">
+    <span class="mgt-alias" id="multimarkdown-style-transclude"></span><span class="mgt-alias" id="wikilink-embeds-1"></span>
+    <p class="mgt-num" aria-hidden="true">23</p>
+    <h2 id="insert-other-documents-title">Insert other documents</h2>
+    <div class="mg-text mgt-lede">Put the text of another document into the edited one, with MultiMarkdown or wikilink syntax.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>MultiMarkdown style</span>
+        <span class="mgt-flip" role="group" aria-label="Show MultiMarkdown style as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>## Food
 
+{{Trips/Lisbon/Restaurants.md}}</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p class="mg-h mg-h2">Food</p>
+<div class="mg-embed"><span class="mg-embed-from">Restaurants.md</span><p><strong>Taberna da Rua</strong>: grilled sardines, cash only.</p></div></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Wikilink style</span>
+        <span class="mgt-flip" role="group" aria-label="Show Wikilink style as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>## Food
+
+![[Trips/Lisbon/Restaurants]]</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p class="mg-h mg-h2">Food</p>
+<div class="mg-embed"><span class="mg-embed-from">Restaurants.md</span><p><strong>Taberna da Rua</strong>: grilled sardines, cash only.</p></div></div>
+      </div>
+      <div class="mg-note mgt-note">For <code>.md</code> documents you can leave out the extension.</div>
+    </figure>
+    
+    <div class="mg-tip"><strong>Note</strong> Only plain text documents can be inserted.</div>
+  </section>
   
-
-
-        
-
-
-
-      </footer>
-
-      
-
-      
-
-
-    </div>
-
+  <section class="mgt-section" id="citations" aria-labelledby="citations-title">
     
-  </article>
+    <p class="mgt-num" aria-hidden="true">24</p>
+    <h2 id="citations-title">Citations</h2>
+    <div class="mg-text mgt-lede">Cite a source with <code>[#name]</code> and list it anywhere in the document. A page number can go first.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Citation</span>
+        <span class="mgt-flip" role="group" aria-label="Show Citation as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Lisbon was rebuilt after 1755.[p. 42][#doe]
 
+[#doe]: John Doe. *A Totally Fake Book*. Vanity Press, 2006.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Lisbon was rebuilt after 1755.<a class="mg-cite" href="#">[p. 42, 1]</a></p>
+<div class="mg-biblio"><p>Bibliography</p><ol><li>John Doe. <em>A Totally Fake Book</em>. Vanity Press, 2006.</li></ol></div></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Inline citation</span>
+        <span class="mgt-flip" role="group" aria-label="Show Inline citation as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Lisbon was rebuilt after 1755.[p. 42][#John Doe. *A Totally Fake Book*. Vanity Press, 2006.]</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Lisbon was rebuilt after 1755.<a class="mg-cite" href="#">[p. 42, 1]</a></p>
+<div class="mg-biblio"><p>Bibliography</p><ol><li>John Doe. <em>A Totally Fake Book</em>. Vanity Press, 2006.</li></ol></div></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="abbreviations" aria-labelledby="abbreviations-title">
+    
+    <p class="mgt-num" aria-hidden="true">25</p>
+    <h2 id="abbreviations-title">Abbreviations</h2>
+    <div class="mg-text mgt-lede">Define an abbreviation with <code>[&gt;…]</code>.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Abbreviation</span>
+        <span class="mgt-flip" role="group" aria-label="Show Abbreviation as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Save the tickets as a PDF.
+
+[&gt;PDF]: Portable Document Format</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Save the tickets as a <abbr title="Portable Document Format">PDF</abbr>.</p></div>
+      </div>
+      <div class="mg-note mgt-note">In the preview, rest the pointer on PDF.</div>
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Inline abbreviation</span>
+        <span class="mgt-flip" role="group" aria-label="Show Inline abbreviation as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Books opens [&gt;(EPUB) Electronic Publication] files.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Books opens <abbr title="Electronic Publication">EPUB</abbr> files.</p></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="glossary" aria-labelledby="glossary-title">
+    
+    <p class="mgt-num" aria-hidden="true">26</p>
+    <h2 id="glossary-title">Glossary</h2>
+    <div class="mg-text mgt-lede">Mark a term with <code>[?…]</code> to define it. The definitions are collected in a glossary.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Glossary term</span>
+        <span class="mgt-flip" role="group" aria-label="Show Glossary term as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>The [?funicular] saves a steep walk.
+
+[?funicular]: A cable railway on a steep slope.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>The <a class="mg-gloss" href="#">funicular</a> saves a steep walk.</p>
+<div class="mg-biblio"><p>Glossary</p><dl><dt>funicular</dt><dd>A cable railway on a steep slope.</dd></dl></div></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Inline glossary term</span>
+        <span class="mgt-flip" role="group" aria-label="Show Inline glossary term as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>The [?(funicular) A cable railway on a steep slope.] saves a steep walk.</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>The <a class="mg-gloss" href="#">funicular</a> saves a steep walk.</p>
+<div class="mg-biblio"><p>Glossary</p><dl><dt>funicular</dt><dd>A cable railway on a steep slope.</dd></dl></div></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
+  
+  <section class="mgt-section" id="subscript-and-superscript" aria-labelledby="subscript-and-superscript-title">
+    
+    <p class="mgt-num" aria-hidden="true">27</p>
+    <h2 id="subscript-and-superscript-title">Subscript and superscript</h2>
+    <div class="mg-text mgt-lede"><code>^</code> raises the characters after it and <code>~</code> lowers them.</div>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Superscript</span>
+        <span class="mgt-flip" role="group" aria-label="Show Superscript as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>A 40 m^2 flat
+x^2 y^3</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>A 40 m<sup>2</sup> flat<br>x<sup>2</sup> y<sup>3</sup></p></div>
+      </div>
+      
+    </figure>
+    
+    <figure class="mgt-ex">
+      <figcaption class="mgt-ex-head">
+        <span>Subscript</span>
+        <span class="mgt-flip" role="group" aria-label="Show Subscript as" hidden>
+          <button type="button" data-view="md">Markdown</button><button type="button" data-view="out">Preview</button>
+        </span>
+      </figcaption>
+      <div class="mgt-panes">
+        
+<pre class="mg-src" aria-label="Markdown"><code>Drink H~2~O
+C~6~H~12~O~6~ and x~z</code></pre>
+        <p class="mgt-arrow" aria-hidden="true">↓ renders as</p>
+        <div class="mg-out" aria-label="Preview"><p>Drink H<sub>2</sub>O<br>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> and x<sub>z</sub></p></div>
+      </div>
+      
+    </figure>
+    
+    
+  </section>
   
   
-</div>
-
-      
-    </div>
-
-    
-
-    <div id="footer" class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
-
-<!-- end custom footer snippets -->
-        
-
-
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    
-
-    
-      
-        
-          <li><a href="#" rel="nofollow noopener noreferrer"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i> This website does not use tracking technologies.</a></li>
-        
-      
-    
-
-    
+<footer class="mg-thanks" id="acknowledgements">
+  <p>Based on</p>
+  <ul>
+    <li><a href="https://rawgit.com/fletcher/MultiMarkdown-6-Syntax-Guide/master/index.html">MultiMarkdown Syntax Guide</a> by Fletcher T. Penney</li>
+    <li><a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github">Quickstart for writing on GitHub</a> by GitHub</li>
+    <li><a href="https://obsidian.md/help/syntax">Obsidian Help</a> by Obsidian</li>
   </ul>
+</footer>
+
+</article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top"
+    title="Scroll to top">
+    &uarr;
+  </a>
 </div>
 
-
-<div class="page__footer-copyright">&copy; 2009 - 2026 <a href="http://localhost:4000">serpensoft.com</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
-
-      </footer>
-    </div>
-
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+      
+      
+        
+          
+          
+      
+      
+      
+      <nav aria-label="Footer menu" class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400 ">
+        <ul class="flex list-none flex-col sm:flex-row">
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 ">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/terms-of-service/"
+                title="">
+                
+                Terms of Service
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 ">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/privacy-policy/"
+                title="">
+                
+                Privacy Policy
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          © 2009–2026 serpensoft · This website does not use tracking technologies.
+      </p>
     
 
-  <script src="/assets/js/main.min.js"></script>
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+      </p>
+    
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Search"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          aria-label="Search"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
 
-
-
-
-
-
-
-
-
-
+    </div>
+    
+    
   </body>
+  
 </html>

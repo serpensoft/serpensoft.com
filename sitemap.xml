@@ -1,48 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://localhost:4000/games/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/iwriter/iwriter-faq/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/iwriter-pro/iwriter-pro-faq/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/iwriter-pro/release-notes-ios/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/iwriter-pro/release-notes-mac/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/iwriter-pro/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/iWriter/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/iwriter-2/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/mmd-syntax-guide/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/mmd-syntax-guide-legacy/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/iwriter-pro/mmd-syntax-guide/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/picky/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/privacy-policy/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/terms-of-service/</loc>
-</url>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/iwriter/iwriter-faq/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/iwriter-pro/iwriter-pro-faq/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/iwriter/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/iwriter-2/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/iwriter-pro/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/iwriter-pro/mmd-syntax-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/mmd-syntax-guide/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/mmd-syntax-guide-legacy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/picky/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/privacy-policy/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/games/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/iwriter-pro/release-notes-ios/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/iwriter-pro/release-notes-mac/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/terms-of-service/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

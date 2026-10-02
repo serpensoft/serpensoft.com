@@ -1,1 +1,153 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-07-20T16:08:03+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">serpensoft.com</title><subtitle>Apps for iPhone, iPad, and Mac</subtitle></feed>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apps for iPhone, iPad, and Mac on serpensoft</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Apps for iPhone, iPad, and Mac on serpensoft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2009–2026 serpensoft · This website does not use tracking technologies.</copyright>
+    <atom:link href="http://localhost:1313/feed.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iWriter - Frequently Asked Questions</title>
+      <link>http://localhost:1313/iwriter/iwriter-faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/iwriter/iwriter-faq/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>iWriter Pro - Frequently Asked Questions</title>
+      <link>http://localhost:1313/iwriter-pro/iwriter-pro-faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/iwriter-pro/iwriter-pro-faq/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>iWriter (Legacy Version)</title>
+      <link>http://localhost:1313/iwriter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/iwriter/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>iWriter 2 for iPhone, iPad and Mac</title>
+      <link>http://localhost:1313/iwriter-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/iwriter-2/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>iWriter Pro for iPhone, iPad and Mac</title>
+      <link>http://localhost:1313/iwriter-pro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/iwriter-pro/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MultiMarkdown Syntax Guide</title>
+      <link>http://localhost:1313/iwriter-pro/mmd-syntax-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/iwriter-pro/mmd-syntax-guide/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MultiMarkdown Syntax Guide</title>
+      <link>http://localhost:1313/mmd-syntax-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/mmd-syntax-guide/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>MultiMarkdown Syntax Guide (Legacy)</title>
+      <link>http://localhost:1313/mmd-syntax-guide-legacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/mmd-syntax-guide-legacy/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Picky</title>
+      <link>http://localhost:1313/picky/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/picky/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>http://localhost:1313/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/privacy-policy/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Puzzle Games</title>
+      <link>http://localhost:1313/games/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/games/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>iWriter Pro (iOS) Release Notes</title>
+      <link>http://localhost:1313/iwriter-pro/release-notes-ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/iwriter-pro/release-notes-ios/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>iWriter Pro (Mac) Release Notes</title>
+      <link>http://localhost:1313/iwriter-pro/release-notes-mac/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/iwriter-pro/release-notes-mac/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Terms of Service</title>
+      <link>http://localhost:1313/terms-of-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/terms-of-service/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,238 +1,684 @@
-
-
 <!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
-  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
-  Copyright 2024-2026 iBug - ibugone.com | @iBug
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="dark"
+  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="en">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
 
-<html lang="en" class="no-js">
-  <head>
+  
+  
+    <title>MultiMarkdown Syntax Guide (Legacy) &middot; serpensoft</title>
+    <meta name="title" content="MultiMarkdown Syntax Guide (Legacy) &middot; serpensoft">
+  
+
+  
+  
+  
+  
+  
     
-<meta charset="utf-8">
-
-
-<!-- begin _includes/seo.html --><title>MultiMarkdown Syntax Guide (Legacy) - serpensoft.com</title>
-<meta name="description" content="Apps for iPhone, iPad, and Mac">
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="serpensoft.com">
-<meta property="og:title" content="MultiMarkdown Syntax Guide (Legacy)">
-<meta property="og:url" content="http://localhost:4000/mmd-syntax-guide-legacy/">
-
-
-  <meta property="og:description" content="Apps for iPhone, iPad, and Mac">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="canonical" href="http://localhost:4000/mmd-syntax-guide-legacy/">
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- end _includes/seo.html -->
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-  window.enable_copy_code_button = true;
-</script>
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
-
-
   
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  
-    <script src="/assets/script.js"></script>
-  
-
-
-    <!-- start custom head snippets -->
-
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
-
-<!-- end custom head snippets -->
-
-  </head>
-
-  <body class="layout--single" dir="ltr">
     
-<nav class="skip-links" aria-label="Skip links">
-  <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
-    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
-    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
-  </ul>
+  
+    
+  
+  
+    <meta name="description" content="Apps for iPhone, iPad, and Mac">
+  
+  
+  
+  
+  <link rel="canonical" href="http://localhost:1313/mmd-syntax-guide-legacy/">
+  
+  
+  
+
+  
+  
+    <meta name="author" content="serpensoft">
+  
+  
+
+  
+  <meta property="og:url" content="http://localhost:1313/mmd-syntax-guide-legacy/">
+	<meta property="og:site_name" content="serpensoft">
+	<meta property="og:title" content="MultiMarkdown Syntax Guide (Legacy)">
+	<meta property="og:description" content="Apps for iPhone, iPad, and Mac">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+
+  
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="MultiMarkdown Syntax Guide (Legacy)">
+	<meta name="twitter:description" content="Apps for iPhone, iPad, and Mac">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.c609944b90203779e1caa5e77796492e8b9b63a93c06ec13e8842d9ba1fab7cce93b6edba224a46636f421e4af0c4888791acb902fb1c646c3003af564f6352c.css"
+    integrity="sha512-xgmUS5AgN3nhyqXnd5ZJLoubY6k8BuwT6IQtm6H6t8zpO27boiSkZjb0IeSvDEiIeRrLkC&#43;xxkbDADr1ZPY1LA==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.764f412f07ea715415e9123a5eb5f355429502d0b760146b9bcab854bc50829dee14488594acd935dfcdc6a0fe7e6d14d7bee914ebb9272b251aa238cb52c4dd.js"
+    integrity="sha512-dk9BLwfqcVQV6RI6XrXzVUKVAtC3YBRrm8q4VLxQgp3uFEiFlKzZNd/NxqD&#43;fm0U177pFOu5JyslGqI4y1LE3Q=="></script>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+    
+    
+    
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.17b3d3bbe00602f12ed247330588c186dd330147642a44a8aca5159f5905a7a6e0a70abb06315b581aef2c4f6d0e4d4bac82dbc1b0916818b057f9ad42c4aae6.js"
+      integrity="sha512-F7PTu&#43;AGAvEu0kczBYjBht0zAUdkKkSorKUVn1kFp6bgpwq7BjFbWBrvLE9tDk1LrILbwbCRaBiwV/mtQsSq5g=="
+      data-copy="Copy"
+      data-copied="Copied"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Apps for iPhone, iPad, and Mac",
+    "name": "MultiMarkdown Syntax Guide (Legacy)",
+    "headline": "MultiMarkdown Syntax Guide (Legacy)",
+    
+    "inLanguage": "en",
+    "url" : "http://localhost:1313/mmd-syntax-guide-legacy/",
+    "author" : {
+      "@type": "Person",
+      "name": "serpensoft"
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    "mainEntityOfPage": "http://localhost:1313/mmd-syntax-guide-legacy/",
+    "wordCount":  1076 
+  }]
+  </script>
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+    
+<script>try{localStorage.removeItem("appearance")}catch(e){}document.documentElement.classList.add("dark")</script>
+<link rel="preload" href="/fonts/ibm-plex-sans/ibm-plex-sans-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/ibm-plex-sans/ibm-plex-sans-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/page-9a199f87f791bfdf4537d8dd8a8ab31b.min.287f6eb6007cc61c4889cdf8aee553791642783c1d8c7c96fff60b9c2e0712d639cd966a14d0ffee77bc85f34c52d1d12aac143d23e001ad4d963d0b752f0110.css" integrity="sha512-KH9utgB8xhxIic34ruVTeRZCeDwdjHyW//YLnC4HEtY5zZZqFND/7ne8hfNMUtHRKqwUPSPgAa1Nlj0LdS8BEA==">
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral bf-scrollbar">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Skip to main content
+      </a>
+    </div>
+    <header>
+      
+      
+        <div class="min-h-[148px]"></div>
+<div class="fixed top-0 inset-x-0 z-100">
+  <div
+    id="menu-blur"
+    class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl backdrop-saturate-220 backdrop-brightness-112 dark:backdrop-saturate-180 dark:backdrop-brightness-95 bg-primary-200/80 bg-linear-60 dark:bg-primary-800/30 shadow-xl"></div>
+  <div class="relative m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32">
+    <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav aria-label="Main menu" class="flex items-center gap-x-5 h-12">
+  
+    
+      
+  
+    <a
+      href="/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="Home"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          Home
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/iwriter-2/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="iWriter 2"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          iWriter 2
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/iwriter-pro/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="iWriter Pro"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          iWriter Pro
+        </span>
+      
+    </a>
+  
+
+    
+      
+  
+    <a
+      href="/picky/"
+      
+      class="flex items-center bf-icon-color-hover"
+      aria-label="Picky"
+      title="">
+      
+      
+        <span class="text-sm font-medium break-normal">
+          Picky
+        </span>
+      
+    </a>
+  
+
+    
+  
+
+  
+
+  
+
+  
+
+  
+    <button
+      id="search-button"
+      aria-label="Search (/ or ⌘K)"
+      class="flex items-center gap-2 rounded-lg border bf-border-color bf-border-color-hover bg-neutral-100/50 px-2 py-1 text-sm text-neutral-500 transition-colors hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral-400 dark:hover:text-primary-400"
+      title="Search (/ or ⌘K)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+      <kbd
+        id="search-shortcut-hint"
+        class="pointer-events-none font-sans text-xs text-neutral-500 dark:text-neutral-400"
+        aria-hidden="true">
+        ⌘K
+      </kbd>
+    </button>
+  
 </nav>
 
+
+
+    </div>
+    <div class="flex md:hidden">
+      
+<div class="mobile-header-row relative flex items-center h-14 gap-4">
+  
+
+  
+
+  
+    <button
+      id="search-button-mobile"
+      aria-label="Search (/ or ⌘K)"
+      class="flex items-center justify-center bf-icon-color-hover"
+      title="Search (/ or ⌘K)">
+      <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+    </button>
+  
+
+  
+    <input type="checkbox" id="mobile-menu-toggle" autocomplete="off" class="hidden peer">
+    <label
+      for="mobile-menu-toggle"
+      tabindex="0"
+      role="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu-dialog"
+      aria-label="Main menu"
+      class="flex items-center justify-center cursor-pointer bf-icon-color-hover">
+      <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+    </label>
+
+    <div
+      id="mobile-menu-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Main menu"
+      style="scrollbar-gutter: stable;"
+      class="z-50 invisible overflow-y-auto opacity-0 transition-[opacity,visibility] duration-300 peer-checked:visible peer-checked:opacity-100
+      
+        fixed inset-0 px-6 py-20 bg-neutral-50/97 dark:bg-neutral-900/99
+      
+      bf-scrollbar">
+      <label
+        for="mobile-menu-toggle"
+        tabindex="0"
+        role="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu-dialog"
+        class="fixed end-8 top-5 z-50 h-12 w-12 rounded-full flex items-center justify-center cursor-pointer select-none bf-icon-color-hover border bf-border-color bf-border-color-hover bg-neutral-50 dark:bg-neutral-900">
+        <span class="sr-only">Close menu</span>
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </label>
+      <nav
+        aria-label="Mobile menu"
+        class="mx-auto max-w-md space-y-6">
+        
+  
     
-
-
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
-        
-        <a class="site-title" href="/">
-          serpensoft.com
-          <span class="site-subtitle">Apps for iPhone, iPad, and Mac</span>
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/"
+          aria-label="Home"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            Home
+          </span>
         </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
-              <a
-                href="/"
-                
-                
-              >Home</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/iwriter-2/"
-                
-                
-              >iWriter 2</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/iwriter-pro/"
-                
-                
-              >iWriter Pro</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/games/"
-                
-                
-              >Games</a>
-            </li><li class="masthead__menu-item">
-              <a
-                href="/picky/"
-                
-                
-              >Picky</a>
-            </li></ul>
         
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
+      </div>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/iwriter-2/"
+          aria-label="iWriter 2"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            iWriter 2
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/iwriter-pro/"
+          aria-label="iWriter Pro"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            iWriter Pro
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+    
+    <div class="px-2">
+      <div class="flex items-center gap-4">
+        <a
+          href="/picky/"
+          aria-label="Picky"
+          
+          class="flex grow items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
+          
+          <span title="" class="text-2xl font-bold tracking-tight">
+            Picky
+          </span>
+        </a>
+        
+      </div>
+
+      
+    </div>
+  
+
+        
+  
+
+        
+  
+
       </nav>
+    </div>
+  
+</div>
+
+
+
+
+
+
+
     </div>
   </div>
 </div>
 
 
-    <div class="initial-content">
+
+
+
+  </div>
+</div>
+
+
+<script
+  type="text/javascript"
+  src="/js/background-blur.min.2b8477cfbdb6843f33fd6f7c9a9a1343c895e878a7b55c32979586e6c6ba1018372c0c66a011abdbd7bc1a912f98ea249043c82bfae8fb04a0f37f854ee1e920.js"
+  integrity="sha512-K4R3z722hD8z/W98mpoTQ8iV6HintVwyl5WG5sa6EBg3LAxmoBGr29e8GpEvmOokkEPIK/ro&#43;wSg83&#43;FTuHpIA=="
+  data-blur-id="menu-blur"></script>
       
-
-
-
-
-
-
-  
-    
-
-
-
-
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-    
-    
-    
-      
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
-
-          <meta itemprop="position" content="1" />
-        </li>
-        <span class="sep">/</span>
-      
-      
-        <li class="current">MultiMarkdown Syntax Guide (Legacy)</li>
-      
-    
+    </header>
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        <article class="iw iw-doc iwp-graphite iwg-doc">
+  <header class="iw-doc-head">
+    <nav class="site-crumbs print:hidden" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/iwriter-pro/">iWriter Pro</a></li>
+    <li aria-current="page">MultiMarkdown Syntax Guide (Legacy)</li>
   </ol>
 </nav>
-
+    <h1>MultiMarkdown Syntax Guide (Legacy)</h1>
+    
+  </header>
+  <div class="iw-doc-body iw-doc-body--toc">
+    
+    <details class="iw-doc-toc" id="iw-doc-toc">
+      <summary>On this page</summary>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#headings">Headings</a></li>
+    <li><a href="#text-styling">Text Styling</a></li>
+    <li><a href="#lists">Lists</a>
+      <ul>
+        <li><a href="#nested-lists">Nested Lists</a></li>
+      </ul>
+    </li>
+    <li><a href="#links">Links</a></li>
+    <li><a href="#images">Images</a></li>
+    <li><a href="#block-quotes">Block-quotes</a></li>
+    <li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li>
+    <li><a href="#code-blocks">Code Blocks</a></li>
+    <li><a href="#fenced-code-blocks">Fenced Code Blocks</a></li>
+    <li><a href="#footnotes">Footnotes</a></li>
+    <li><a href="#horizontal-rule">Horizontal rule</a></li>
+    <li><a href="#tables">Tables</a></li>
+    <li><a href="#html-blocks">HTML Blocks</a>
+      <ul>
+        <li><a href="#page-break">Page Break</a></li>
+      </ul>
+    </li>
+    <li><a href="#math-and-diagrams">Math and Diagrams</a></li>
+    <li><a href="#table-of-contents">Table of contents</a></li>
+    <li><a href="#insert-other-documents-transclusion">Insert other documents (transclusion)</a></li>
+    <li><a href="#citations">Citations</a></li>
+    <li><a href="#cross-references">Cross-references</a></li>
+    <li><a href="#definition-lists">Definition Lists</a></li>
+    <li><a href="#abbreviations">Abbreviations</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+    <li><a href="#subscript-and-superscript">Subscript &amp; Superscript</a></li>
+    <li><a href="#escaped-characters">Escaped characters</a></li>
+    <li><a href="#document-metadata">Document Metadata</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ul>
+</nav>
+    </details>
+    <script>if (matchMedia("(min-width: 1024px)").matches) document.getElementById("iw-doc-toc").open = true;</script>
+    
+    <div class="iw-doc-content prose">
+      
+  
+  
+  
   
 
 
-<div id="main" role="main">
+
+<div
   
-
-
-
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="MultiMarkdown Syntax Guide (Legacy)">
+    class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+  
+  >
+  <span
     
+      class="text-primary-400 pe-3 flex items-center"
     
+    >
+    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+</span>
+  </span>
+
+  <span
     
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/mmd-syntax-guide-legacy/" itemprop="url">MultiMarkdown Syntax Guide (Legacy)
-</a>
-          </h1>
-          
+      class="dark:text-neutral-300"
+    
+    >This is the legacy version of MMD Guide.
+If you are looking for <strong>iWriter 2</strong> version, please go <a href="/mmd-syntax-guide/" >here</a></span>
+</div>
 
 
 
-        </header>
-      
-
-      <section class="page__content e-content" itemprop="text">
-        
-          <aside class="sidebar__right sticky">
-            <nav class="toc" aria-label="Table of contents">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#headings">Headings</a></li><li><a href="#text-styling">Text Styling</a></li><li><a href="#lists">Lists</a><ul><li><a href="#nested-lists">Nested Lists</a></li></ul></li><li><a href="#links">Links</a></li><li><a href="#images">Images</a></li><li><a href="#block-quotes">Block-quotes</a></li><li><a href="#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li><li><a href="#code-blocks">Code Blocks</a></li><li><a href="#fenced-code-blocks">Fenced Code Blocks</a></li><li><a href="#footnotes">Footnotes</a></li><li><a href="#horizontal-rule">Horizontal rule</a></li><li><a href="#tables">Tables</a></li><li><a href="#html-blocks">HTML Blocks</a><ul><li><a href="#page-break">Page Break</a></li></ul></li><li><a href="#math-and-diagrams">Math and Diagrams</a></li><li><a href="#table-of-contents">Table of contents</a></li><li><a href="#insert-other-documents-transclusion">Insert other documents (transclusion)</a></li><li><a href="#citations">Citations</a></li><li><a href="#cross-references">Cross-references</a></li><li><a href="#definition-lists">Definition Lists</a></li><li><a href="#abbreviations">Abbreviations</a></li><li><a href="#glossary">Glossary</a></li><li><a href="#subscript--superscript">Subscript &amp; Superscript</a></li><li><a href="#escaped-characters">Escaped characters</a></li><li><a href="#document-metadata">Document Metadata</a></li></ul>
-            </nav>
-          </aside>
-        
-        <p class="notice--info">This is the legacy version of MMD Guide.
-If you are looking for <strong>iWriter 2</strong> version, please go <a href="/mmd-syntax-guide/">here</a></p>
-
-<h2 id="headings">Headings</h2>
-
-<p>To create a heading, add one to six <code class="language-plaintext highlighter-rouge">#</code> symbols before your heading text. The number of <code class="language-plaintext highlighter-rouge">#</code> you use will determine the 
+<h2 class="relative group">Headings
+    <div id="headings" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#headings" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>To create a heading, add one to six <code>#</code> symbols before your heading text. The number of <code>#</code> you use will determine the
 hierarchy level and typeface size of the heading.</p>
-
 <p>ATX-Style Headings</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is a heading H1
+<pre><code># This is a heading H1
 ## This is a heading H2
 ### This is a heading H3
 #### This is a heading H4
@@ -240,509 +686,714 @@ hierarchy level and typeface size of the heading.</p>
 ###### This is a heading H6
 
 # Heading with custom id [custom-id]
-</code></pre></div></div>
-
+</code></pre>
 <p>Setext Headings are also supported:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A First Level Header
+<pre><code>A First Level Header
 =========
 
 A Second Level Header
 ---------
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="text-styling">Text Styling</h2>
 
+<h2 class="relative group">Text Styling
+    <div id="text-styling" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#text-styling" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <p><strong>Strong style</strong></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This text is **bold**.
+<pre><code>This text is **bold**.
 This text is also __bold__.
-</code></pre></div></div>
-
+</code></pre>
 <p><em>Emphasis style</em></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This text is *italicized*.
+<pre><code>This text is *italicized*.
 This text is also _italicized_.
-</code></pre></div></div>
-
-<p><strong><em>Oblique style</em></strong></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This text is ***oblique***.
+</code></pre>
+<p><em><strong>Oblique style</strong></em></p>
+<pre><code>This text is ***oblique***.
 This text is also ___oblique___.
-</code></pre></div></div>
-
+</code></pre>
 <p><del>Strikethrough style</del></p>
+<pre><code>And this is the ~~strikethrough~~ style.
+</code></pre>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>And this is the ~~strikethrough~~ style.
-</code></pre></div></div>
 
-<h2 id="lists">Lists</h2>
-
-<p>You can make an unordered list by preceding one or more lines of text with <code class="language-plaintext highlighter-rouge">-</code>, <code class="language-plaintext highlighter-rouge">*</code>, or <code class="language-plaintext highlighter-rouge">+</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Bulleted list item
+<h2 class="relative group">Lists
+    <div id="lists" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lists" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>You can make an unordered list by preceding one or more lines of text with <code>-</code>, <code>*</code>, or <code>+</code>.</p>
+<pre><code>* Bulleted list item
 + Bulleted list item
 - Bulleted list item
-</code></pre></div></div>
-
+</code></pre>
 <p>To order your list, precede each line with a number.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Numbered list item
+<pre><code>1. Numbered list item
 2. Numbered list item
 3. Numbered list item
-</code></pre></div></div>
-
-<p>To create a task list, preface list items with a hyphen and space followed by <code class="language-plaintext highlighter-rouge">[ ]</code>. To mark a task as complete, use <code class="language-plaintext highlighter-rouge">[x]</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [ ] Task list item
+</code></pre>
+<p>To create a task list, preface list items with a hyphen and space followed by <code>[ ]</code>. To mark a task as complete, use <code>[x]</code>.</p>
+<pre><code>- [ ] Task list item
 - [ ] Task list item
 - [x] Task list item
-</code></pre></div></div>
+</code></pre>
 
-<h3 id="nested-lists">Nested Lists</h3>
 
+<h3 class="relative group">Nested Lists
+    <div id="nested-lists" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#nested-lists" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
 <p>You can create a nested list by indenting one or more list items below another item.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. First list item
+<pre><code>1. First list item
    - First nested list item
      - Second nested list item
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="links">Links</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Link Title](/url/to/destination)
+<h2 class="relative group">Links
+    <div id="links" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#links" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<pre><code>[Link Title](/url/to/destination)
 [iwriter](https://serpensoft.com/iwriter-2/)
-</code></pre></div></div>
-
-<p>If your URL contains blank spaces, you must escape them by replacing them with <code class="language-plaintext highlighter-rouge">%20</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Optional Link Title](/url%20with%20spaces)
-</code></pre></div></div>
-
+</code></pre>
+<p>If your URL contains blank spaces, you must escape them by replacing them with <code>%20</code>.</p>
+<pre><code>[Optional Link Title](/url%20with%20spaces)
+</code></pre>
 <p>Inline links:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;foo@example.com&gt;
+<pre><code>&lt;foo@example.com&gt;
 Link to &lt;http://serpensoft.com&gt;
-</code></pre></div></div>
-
+</code></pre>
 <p>Reference-style link:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Link to [Website][Link].
+<pre><code>Link to [Website][Link].
 ...
 [Link]: http://serpensoft.com
-</code></pre></div></div>
-
+</code></pre>
 <p>Reference link with styling:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Link to [Website].
+<pre><code>Link to [Website].
 ...
-[Website]: http://serpensoft.com style="border: solid black 1px;"
-</code></pre></div></div>
+[Website]: http://serpensoft.com style=&quot;border: solid black 1px;&quot;
+</code></pre>
 
-<h2 id="images">Images</h2>
 
-<p>You can display an image by adding <code class="language-plaintext highlighter-rouge">!</code> and wrapping the alt text in <code class="language-plaintext highlighter-rouge">[ ]</code>. Alt text is a short text equivalent of the information in the image. Then, wrap the link for the image in parentheses <code class="language-plaintext highlighter-rouge">()</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Optional Caption](/link/to/image "Optional title")
-</code></pre></div></div>
-
+<h2 class="relative group">Images
+    <div id="images" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#images" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>You can display an image by adding <code>!</code> and wrapping the alt text in <code>[ ]</code>. Alt text is a short text equivalent of the information in the image. Then, wrap the link for the image in parentheses <code>()</code>.</p>
+<pre><code>![Optional Caption](/link/to/image &quot;Optional title&quot;)
+</code></pre>
 <p>Inline image:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![image](Website.png "This is a title")
-</code></pre></div></div>
-
+<pre><code>![image](Website.png &quot;This is a title&quot;)
+</code></pre>
 <p>Image with attributes:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![image]
+<pre><code>![image]
 ...
-[image]: Website.png "This is a title" height=25px width=50px
-</code></pre></div></div>
-
+[image]: Website.png &quot;This is a title&quot; height=25px width=50px
+</code></pre>
 <p>Image by itself becomes a figure:</p>
+<pre><code>![This is the caption][image]
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![This is the caption][image]
+[image]: Website.png &quot;This is the title&quot; height=45px width=120px
+</code></pre>
 
-[image]: Website.png "This is the title" height=45px width=120px
-</code></pre></div></div>
 
-<h2 id="block-quotes">Block-quotes</h2>
-
-<p>You can quote text with a <code class="language-plaintext highlighter-rouge">&gt;</code>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Regular text.
+<h2 class="relative group">Block-quotes
+    <div id="block-quotes" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#block-quotes" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>You can quote text with a <code>&gt;</code>.</p>
+<pre><code>Regular text.
 
 &gt; Blockquote
 &gt; with two lines.
 And one more line.
 &gt;&gt; And a second level blockquote.
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="paragraphs-and-line-breaks">Paragraphs and Line Breaks</h2>
 
+<h2 class="relative group">Paragraphs and Line Breaks
+    <div id="paragraphs-and-line-breaks" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#paragraphs-and-line-breaks" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <p>To create a line break in a Markdown file, you will need to include one of the following:</p>
-
 <p>Include two spaces at the end of the first line.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example  
+<pre><code>This example  
 Will span two lines.
-</code></pre></div></div>
-
+</code></pre>
 <p>Include a backslash at the end of the first line.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example\
+<pre><code>This example\
 Will span two lines.
-</code></pre></div></div>
-
+</code></pre>
 <p>Include an HTML single line break tag at the end of the first line.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example&lt;br/&gt;
+<pre><code>This example&lt;br/&gt;
 Will span two lines.
-</code></pre></div></div>
-
+</code></pre>
 <p>Or, leave a blank line between two lines.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This example
+<pre><code>This example
  
 Will span two lines.
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="code-blocks">Code Blocks</h2>
 
-<p><code class="language-plaintext highlighter-rouge">This is an inline code block.</code></p>
-
+<h2 class="relative group">Code Blocks
+    <div id="code-blocks" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#code-blocks" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p><code>This is an inline code block.</code></p>
 <p>Indent text with tabs or 4+ space characters to create a multiline code block:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a longer
+<pre><code>This is a longer
 section of code
 on multiple lines.
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="fenced-code-blocks">Fenced Code Blocks</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
+<h2 class="relative group">Fenced Code Blocks
+    <div id="fenced-code-blocks" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#fenced-code-blocks" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<pre><code>```
 This is a fenced
 code block.
 ```
-</code></pre></div></div>
-
+</code></pre>
 <p>Fenced code block with a language marker:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```perl
-  print "Hello, world!\n";
+<pre><code>```perl
+  print &quot;Hello, world!\n&quot;;
   $a = 0;
   while ($a &lt; 10) {
-    print "$a...\n";
+    print &quot;$a...\n&quot;;
     $a++;
   }
 ```
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="footnotes">Footnotes</h2>
 
+<h2 class="relative group">Footnotes
+    <div id="footnotes" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#footnotes" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <p>Reference style:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Text[^foot].
+<pre><code>Text[^foot].
 
 [^foot]: This is a footnote.
-</code></pre></div></div>
-
+</code></pre>
 <p>Inline:</p>
+<pre><code>Text[^This is an inline footnote.].
+</code></pre>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Text[^This is an inline footnote.].
-</code></pre></div></div>
 
-<h2 id="horizontal-rule">Horizontal rule</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-----
+<h2 class="relative group">Horizontal rule
+    <div id="horizontal-rule" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#horizontal-rule" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<pre><code>-----
 
 - - - - -
 
 *****
 
 * * * * *
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="tables">Tables</h2>
 
+<h2 class="relative group">Tables
+    <div id="tables" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#tables" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <p>Simple table:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| foo | bar |
+<pre><code>| foo | bar |
 | --- | --- |
 | foo | bar |
 | foo bar  ||
 [*caption*][id]
-</code></pre></div></div>
-
+</code></pre>
 <p>Table with aligned columns:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| right aligned | centered | left aligned |
+<pre><code>| right aligned | centered | left aligned |
 | ---: | :---: | :--- |
 | foo | bar | bat |
 | foo | bar | bat |
 [*caption*][id]
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="html-blocks">HTML Blocks</h2>
 
+<h2 class="relative group">HTML Blocks
+    <div id="html-blocks" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#html-blocks" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <p>The app supports plain HTML blocks.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;This is HTML paragraph.&lt;/p&gt;
+<pre><code>&lt;p&gt;This is HTML paragraph.&lt;/p&gt;
 
 &lt;mark&gt;This text is highlighted.&lt;/mark&gt;
-</code></pre></div></div>
-
+</code></pre>
 <p>You can also modify the underlying styling using CSS:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;style&gt;
+<pre><code>&lt;style&gt;
 p { color: yellow; }
 &lt;/style&gt;
-</code></pre></div></div>
+</code></pre>
 
-<p class="notice">Blank lines within tags are not supported.</p>
+  
+  
+  
+  
 
-<h3 id="page-break">Page Break</h3>
 
+
+<div
+  
+    class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+  
+  >
+  <span
+    
+      class="text-primary-400 pe-3 flex items-center"
+    
+    >
+    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+</span>
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    
+    >Blank lines within tags are not supported.</span>
+</div>
+
+
+
+<h3 class="relative group">Page Break
+    <div id="page-break" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#page-break" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
 <p>Use this code snippet to insert a page break:</p>
+<pre><code>&lt;div style='break-after:page'&gt;&lt;/div&gt;
+</code></pre>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div style='break-after:page'&gt;&lt;/div&gt;
-</code></pre></div></div>
 
-<h2 id="math-and-diagrams">Math and Diagrams</h2>
-
-<p>You can add math expressions to your notes using <code class="language-plaintext highlighter-rouge">MathJax</code> and the <code class="language-plaintext highlighter-rouge">LaTeX</code> notation.</p>
-
+<h2 class="relative group">Math and Diagrams
+    <div id="math-and-diagrams" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#math-and-diagrams" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>You can add math expressions to your notes using <code>MathJax</code> and the <code>LaTeX</code> notation.</p>
 <p>Inline math:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$e^{2i\pi} = 1$
-</code></pre></div></div>
-
+<pre><code>$e^{2i\pi} = 1$
+</code></pre>
 <p>Math block:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
+<pre><code>$$
 \begin{vmatrix}a &amp; b\\
 c &amp; d
 \end{vmatrix}=ad-bc
 $$
-</code></pre></div></div>
-
-<p>You can add diagrams and charts to your notes, using <code class="language-plaintext highlighter-rouge">Mermaid</code>. <code class="language-plaintext highlighter-rouge">Mermaid</code> supports a range of diagrams, such as flow charts, sequence diagrams, and timelines.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```mermaid
+</code></pre>
+<p>You can add diagrams and charts to your notes, using <code>Mermaid</code>. <code>Mermaid</code> supports a range of diagrams, such as flow charts, sequence diagrams, and timelines.</p>
+<pre><code>```mermaid
 sequenceDiagram
     Alice-&gt;&gt;+John: Hello John, how are you?
     Alice-&gt;&gt;+John: John, can you hear me?
     John--&gt;&gt;-Alice: Hi Alice, I can hear you!
     John--&gt;&gt;-Alice: I feel great!
 ```
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="table-of-contents">Table of contents</h2>
 
-<p>Use this shortcut to generate the document’s table of contents:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{TOC}}
-</code></pre></div></div>
-
+<h2 class="relative group">Table of contents
+    <div id="table-of-contents" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#table-of-contents" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>Use this shortcut to generate the document&rsquo;s table of contents:</p>
+<pre><code>{{TOC}}
+</code></pre>
 <p>The table of contents will be automatically generated from the available headings.</p>
 
-<h2 id="insert-other-documents-transclusion">Insert other documents (transclusion)</h2>
 
+<h2 class="relative group">Insert other documents (transclusion)
+    <div id="insert-other-documents-transclusion" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#insert-other-documents-transclusion" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <p>Use the following syntax to attach the content of external document:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{{filename.md}} 
+<pre><code>{{filename.md}} 
 
 {{folder/filename.md}}
 
 {{folder/filename with spaces.md}}
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="citations">Citations</h2>
 
+<h2 class="relative group">Citations
+    <div id="citations" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#citations" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <p>Reference style:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cite a source.[p. 42][#source]
+<pre><code>Cite a source.[p. 42][#source]
 
 [#source]: John Doe. *A Totally Fake Book*. Vanity Press, 2006.
-</code></pre></div></div>
-
+</code></pre>
 <p>Inline:</p>
+<pre><code>Cite a source.[p. 42][#John Doe. *A Totally Fake Book*. Vanity Press, 2006.]
+</code></pre>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cite a source.[p. 42][#John Doe. *A Totally Fake Book*. Vanity Press, 2006.]
-</code></pre></div></div>
 
-<h2 id="cross-references">Cross-references</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Intro #
+<h2 class="relative group">Cross-references
+    <div id="cross-references" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#cross-references" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<pre><code># Intro #
 
 # Conclusion [fin] #
 
 Link to [Intro].
 
 Link to the [end][fin].
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="definition-lists">Definition Lists</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Apple
+<h2 class="relative group">Definition Lists
+    <div id="definition-lists" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#definition-lists" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<pre><code>Apple
 :   Pomaceous fruit of plants of the genus Malus 
 in the family Rosaceae.
 
 Also the makers of really great products.
-</code></pre></div></div>
+</code></pre>
 
-<h2 id="abbreviations">Abbreviations</h2>
 
+<h2 class="relative group">Abbreviations
+    <div id="abbreviations" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#abbreviations" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <p>Reference style:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTML and HTML
+<pre><code>HTML and HTML
 
 [&gt;HTML]: Hypertext Markup Language
-</code></pre></div></div>
-
+</code></pre>
 <p>Inline:</p>
+<pre><code>[&gt;(HTML) Hypertext Markup Language] and HTML
+</code></pre>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[&gt;(HTML) Hypertext Markup Language] and HTML
-</code></pre></div></div>
 
-<h2 id="glossary">Glossary</h2>
-
+<h2 class="relative group">Glossary
+    <div id="glossary" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#glossary" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <p>Reference style:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[?Glossary] is a glossary term.
+<pre><code>[?Glossary] is a glossary term.
 
 [?Glossary]: The glossary collects information about
 important terms used in your document.
-</code></pre></div></div>
-
+</code></pre>
 <p>Inline:</p>
+<pre><code>[?(Glossary) The glossary collects information about important terms used in your document] is a glossary term.
+</code></pre>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[?(Glossary) The glossary collects information about important terms used in your document] is a glossary term.
-</code></pre></div></div>
 
-<h2 id="subscript--superscript">Subscript &amp; Superscript</h2>
-
+<h2 class="relative group">Subscript &amp; Superscript
+    <div id="subscript-and-superscript" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#subscript-and-superscript" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <p>m<sup>2</sup></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> m^2
-</code></pre></div></div>
-
+<pre><code>m^2
+</code></pre>
 <p>x<sup>2</sup>y<sup>3</sup></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x^2 y^3
-</code></pre></div></div>
-
+<pre><code>x^2 y^3
+</code></pre>
 <p>x<sub>z</sub></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x~z
-</code></pre></div></div>
-
+<pre><code>x~z
+</code></pre>
 <p>C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
+<pre><code>C~6~H~12~O~6~
+</code></pre>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C~6~H~12~O~6~
-</code></pre></div></div>
 
-<h2 id="escaped-characters">Escaped characters</h2>
+<h2 class="relative group">Escaped characters
+    <div id="escaped-characters" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#escaped-characters" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<pre><code>\&amp; \$ \* \_
+</code></pre>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\&amp; \$ \* \_
-</code></pre></div></div>
 
-<h2 id="document-metadata">Document Metadata</h2>
-
+<h2 class="relative group">Document Metadata
+    <div id="document-metadata" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#document-metadata" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
 <p>Metadata fields should be added at the top of the document.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Title:  This is a title
+<pre><code>Title:  This is a title
 Author: John Appleseed
 E-Mail: email@server.com
 Date:   2025-10-20
-</code></pre></div></div>
-
+</code></pre>
 <p>Metadata will be applied during the export process.</p>
 
-<h1 id="acknowledgements">Acknowledgements</h1>
 
-<p><a href="https://rawgit.com/fletcher/MultiMarkdown-6-Syntax-Guide/master/index.html">MultiMarkdown Syntax Guide</a> by Fletcher T. Penney.</p>
-
-<p><a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github">Quickstart for writing on GitHub</a></p>
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-
-  
-
-  
-
-
-        
-
-
-
-      </footer>
-
-      
-
-      
-
+<h2 class="relative group">Acknowledgements
+    <div id="acknowledgements" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#acknowledgements" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p><a href="https://rawgit.com/fletcher/MultiMarkdown-6-Syntax-Guide/master/index.html"  target="_blank" rel="noreferrer">MultiMarkdown Syntax Guide</a> by Fletcher T. Penney.</p>
+<p><a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github"  target="_blank" rel="noreferrer">Quickstart for writing on GitHub</a></p>
 
     </div>
+  </div>
+</article>
 
-    
-  </article>
+        
+
 
   
-  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top"
+    title="Scroll to top">
+    &uarr;
+  </a>
 </div>
 
-      
-    </div>
-
-    
-
-    <div id="footer" class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
-
-<!-- end custom footer snippets -->
-        
-
-
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    
-
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
     
       
-        
-          <li><a href="#" rel="nofollow noopener noreferrer"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i> This website does not use tracking technologies.</a></li>
-        
       
+        
+          
+          
+      
+      
+      
+      <nav aria-label="Footer menu" class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400 ">
+        <ul class="flex list-none flex-col sm:flex-row">
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 ">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/terms-of-service/"
+                title="">
+                
+                Terms of Service
+              </a>
+            </li>
+          
+            <li class=" flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 ">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                href="/privacy-policy/"
+                title="">
+                
+                Privacy Policy
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    
+  
+  <div class="flex items-center justify-between">
+    
+    
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          © 2009–2026 serpensoft · This website does not use tracking technologies.
+      </p>
     
 
     
-  </ul>
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+      </p>
+    
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Search"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh] z-500"
+  data-url="/">
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800">
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative block icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          aria-label="Search"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0">
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
 </div>
 
-
-<div class="page__footer-copyright">&copy; 2009 - 2026 <a href="http://localhost:4000">serpensoft.com</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
-
-      </footer>
     </div>
-
     
-
-  <script src="/assets/js/main.min.js"></script>
-
-
-
-
-
-
-
-
-
-
+    
   </body>
+  
 </html>
